@@ -1,0 +1,302 @@
+yrk:
+    tr: and
+    part: conjunction
+boryg:
+    tr: acidic, yellow, sulfurous
+    part: adj
+
+adhla:
+    tr: in the way of, according to, through, in (smth) way
+    note: commonly combined in \textbf{adhla matty}, \emph{in which way} or \emph{how}
+    
+agarak:
+    tr: feel good, feel well, be well
+    part: v intr
+    
+ak:
+    tr: be (copula)
+    part: v tr
+
+ame:
+    tr: here
+    part: adv
+
+arbyd:
+    tr: river
+    part: n
+
+arkatt:
+    tr: be disgusted by, be appalled by
+    part: v tr
+
+babyr:
+    tr: suffering, pain
+    part: n
+
+barkag:
+    tr: number
+    part: n
+
+bemon:
+    tr: rock
+    part: n
+berb:
+    tr: arm
+    part: n
+
+blyshl:
+    tr: sap (of plunts)
+    part: n
+
+bodard:
+    tr: sleep
+    part: v intr
+
+borag:
+    tr: sulfur
+    part: n
+
+bord:
+    tr: death
+    part: n
+
+da:
+    tr: 'no'
+    part: response particle
+
+darg:
+    tr: fire
+    part: n
+
+darg:
+    tr: burn
+    part: v intr
+
+
+egorat:
+    tr: examine
+    part: v tr
+
+egord:
+    tr: examination
+    part: n
+
+fattarym:
+    tr: neighbour
+    part: n
+
+febodh:
+    tr: pocket
+    part: n
+
+femen:
+    tr: finger, toe
+    part: n
+
+femen:
+    tr: need
+    part: n
+
+fytta:
+    tr: male
+    part: adj
+
+garyk:
+    tr: this (close to listener)
+    part: pronoun
+
+gydda:
+    tr: love
+    part: n
+    note: both meaning fraternal or sexual love or affection, also directed towards inanimate entities but only in the sense of caring about, never in the sense of strongly liking. The verb "to love" is gydda kad
+
+kad:
+    tr: offer, give, provide
+    part: v tr
+
+karb:
+    tr: welcome
+    part: v tr
+
+katarotta:
+    tr: female
+    part: n
+kerb:
+    tr: low
+    part: adj
+
+yngap:
+    tr: buttock
+    part: n
+    note: the buttocks is dual
+
+moshl:
+    tr: mother
+    part: n
+
+
+ngonak:
+    tr: glisten, glimmer, shimmer, shine
+    part: v intr
+
+ketta:
+    tr: coin
+    part: n
+
+korb:
+    tr: child
+    part: n
+
+kym:
+    tr: while, as
+    part: conjunction
+
+kyng:
+    tr: mouth
+    part: n
+
+kyryd:
+    tr: woman
+    part: n
+
+mak:
+    tr: lead, guide, teach, pave the way
+    part: v tr
+
+mashl:
+    tr: go, enter
+    part: v intr
+
+matty:
+    tr: which, what
+    part: interrogative pronoun
+
+medh:
+    tr: behind
+    part: adverb
+
+morad:
+    tr: ground, land
+    part: n
+
+mydhlark:
+    tr: lay down, lie
+    part: v intr
+
+myfo:
+    tr: tall, deep
+    part: adj
+
+na:
+    tr: "yes"
+    part: response particle
+
+ngyard:
+    tr: salt
+    part: n
+
+pak:
+    tr: village
+    part: n
+
+pdamen:
+    tr: sky
+    part: n
+
+pottarat:
+    tr: sew
+    part: v tr
+
+pyrdak:
+    tr: bring, present, introduce
+    part: v tr
+
+rbam:
+    tr: eat
+    part: v tr
+
+rda:
+    tr: then, in the past
+    part: adverb
+
+rdan:
+    tr: together
+    part: adverb
+
+rkyng:
+    tr: beard
+    part: n
+
+sab:
+    tr: sand
+    part: n
+
+setta:
+    tr: regret
+    part: n
+
+
+shlarb:
+    tr: water
+    part: n
+
+shlaryb:
+    tr: wet
+    part: adj
+
+shlattky:
+    tr: blood
+    part: n
+
+sodhl:
+    tr: cloud
+    part: n
+
+syng:
+    tr: safe (as in safety)
+    part: adj
+
+syrbattam:
+    tr: room
+    part: n
+
+torkam:
+    tr: take, grab, remove
+    part: v tr
+
+ttakyba:
+    tr: visit, opposition of the Wanderer, years of age
+    part: n
+
+ttfysh:
+    tr: rain, raindrop
+    part: n
+
+tyreb:
+    tr: human, person, man, woman
+    part: n
+
+
+yngok:
+    tr: light
+    part: n
+
+shaf:
+    tr: hospitality
+    part: n
+
+karatto:
+    tr: oasis, crater
+    part: n
+
+kashl:
+    tr: urine
+    part: n
+
+borgoredh:
+    tr: discipline
+    part: n
+
+bordam:
+    tr: tell, say, recount
+    part: v tr
