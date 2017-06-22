@@ -108,9 +108,9 @@ garyk:
 gydda:
     tr: love
     part: n
-    note: both meaning fraternal or sexual love or affection, also directed towards inanimate entities but only in the sense of caring about, never in the sense of strongly liking. The verb "to love" is gydda kad
+    note: both meaning fraternal or sexual love or affection, also directed towards inanimate entities but only in the sense of caring about, never in the sense of strongly liking. The verb "to love" is gydda kat
 
-kad:
+kat:
     tr: offer, give, provide
     part: v tr
 
@@ -300,3 +300,74 @@ borgoredh:
 bordam:
     tr: tell, say, recount
     part: v tr
+
+morat:
+    tr: look
+    part: v tr
+
+nadd:
+    tr: it seems like, it appears like
+    part: adverb
+    note: before a verb in subjunctive, expresses apparence
+
+byrmodak:
+    tr: weigh (asses weight of something)
+    part: v tr
+
+byrma:
+    tr: heavy
+    part: adj
+
+kam:
+    tr: talk
+    part: v tr
+    note: object is listener, topic is in ablative
+
+kagmenyr:
+    tr: book, booklet, notepad, diary
+    part: n
+
+fysh:
+    tr: single hair
+    part: n
+
+
+bob:
+    tr: head
+    part: n
+
+dhyrg:
+    tr: eye
+    part: n
+
+goma:
+    tr: skin
+    part: n
+
+boma:
+    tr: young
+    part: adj
+
+pyka:
+    tr: small
+    part: adj
+
+rgodha:
+    tr: long
+    part: adj
+
+karyttfa:
+    tr: old
+    part: adj
+
+dhlaboma:
+    tr: old
+    part: adj
+
+pat:
+    tr: walk
+    part: v intr
+
+papat:
+    tr: run
+    part: v intr

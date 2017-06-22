@@ -3,7 +3,9 @@
 
 %\usepackage{showframe} % debug
 
+\setlength{\parindent}{0pt}
 
+\setlength{\parskip}{0.5em}
 
 \usepackage{titlesec}
 \usepackage{verse}
@@ -21,8 +23,14 @@
 \usepackage{rotating}
 \usepackage{varwidth}
 
+\usepackage[11pt]{moresize}
+\usepackage{anyfontsize}
+
 \usepackage{gensymb}
 \usepackage{caption}
+
+
+\newcommand{\cmmnt}[1]{\textcolor{red}{#1}}
 
 \newcommand{\sectionbreak}{\clearpage}
 \newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
@@ -42,10 +50,11 @@
 \newcommand{\flav}[1]{  
 	\begin{turn}{-90}
 		\begin{varwidth}{10 cm}
-			{\centering \flavan \hspace{-12pt} #1}
+			{\centering \flavan  #1}
 		\end{varwidth}
 	\end{turn} }
 
+    \newcommand{\fliv}[1]{{\flavan #1} }
 
 \newcommand{\Flav}[1]{{\Large \flav{#1}}}
 
@@ -322,12 +331,21 @@ In this interesting example, the refrain is doubly deceiving as it also sets up 
 \section{Psychedelics}
 
 \chapter{The Flavan Language}
+{\Large Reference Grammar and Lexicon}
 
+\vfill
+\vspace{-30pt}
+\begin{center}
+    {\fontsize{100}{80}\selectfont \flav{ngon\\ongok\\keb}} 
+
+    \emph{``If I could speak light...''}
+\end{center}
+\vfill
 
 \pagebreak
 \section{Phonology and phonotactics}
 
-The phonetic inventory of Flavan is most conveniently presented by means of their own organization in terms of an ``alphabet'', which is a list of allowable consonant clusters and single vowels. Curiosly, they arbitrarily separate consonantal sounds into ``common'' and ``uncommon'', crudely reflecting the frequency of those phonemes in spoken language. The following chart lists the Flavan names for the phonemes, their average Demorog and Bymarog pronunciations, their romanization, and also introduces the corresponding glyphs in the Flavan abugida, which will be introduced later.
+The phonetic inventory of Flavan is most conveniently presented by means of their own organization in terms of an ``alphabet'', which is a list of allowable consonant clusters and single vowels. Curiosly, they arbitrarily separate consonantal sounds into ``common'' and ``uncommon'', crudely reflecting the frequency of those phonemes in spoken language. The following chart lists the Flavan names for the phonemes, their average Demorog and Bymarog pronunciations, their romanization, and also introduces the corresponding glyphs in the Flavan abugida, which will be better explained later.
 
 %\begin{multicols}{2}
 
@@ -384,9 +402,9 @@ The phonetic inventory of Flavan is most conveniently presented by means of thei
 		Glyph & Rom. & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
 		\hline 
 None		& a	& \ipa{a}	& \apa{a}	& atta\\
-\flav{e}	& e	& \ipa{e}	& \apa{e}	& etta\\
+\flav{e}	& e	& \ipa{e} (or \apa{E})	& \apa{e} 	& etta\\
 \flav{y}	& y	& \ipa{1} (or \apa{ju})	& \apa{u} (or \apa{ui}) & ytta \\
-\flav{o}	& o	& \ipa{o} 	& \apa{o} & ordar\\
+\flav{o}	& o	& \ipa{o} (or \apa{O})	& \apa{o} & ordar\\
 
 
 
@@ -403,29 +421,33 @@ A flavan word is just an alternating sequence of consonant clusters and vowels (
 
 It is occasionally possible for two vowels to be consecutive (VV) as a consequence of affixing. In that case, if the vowels are different they form a diphthong.
 
+As a final note, it is possible for the cluster \apa{kt} to appear exclusively in word-final position. This is not understood by Flavans as a distinct ``letter'' as it arises from a vowel elision in some genitive suffixes. Notation for \apa{kt} is explained in the section for the script.
+
 \subsection{Pronunciation rules}
 
 \begin{itemize}
-	\item \ipa{1r} becomes the syllabic consonant \apa{\s{\*{r}}}. Example: \textbf{yrk} \flav{yrk} \ipa{\s{\*{r}}k}, \emph{and}
-	\item \ipa{e} and \ipa{o} when stressed open up to \apa{E} and \apa{O} respectively. Example: \textbf{borag} \flav{borag} \ipa{"bO.rag}, \emph{sulfur}
+	\item \ipa{1r} before another consonant becomes the syllabic consonant \apa{\s{r}}. Example: \textbf{yrk} \flav{yrk} \ipa{\s{r}k}, \emph{and}
+    \item \ipa{1m} before another consonant becomes the syllabic consonant \apa{\s{m}}. Example: \textbf{kym} \ipa{k\s{m}}, \emph{while}.
+    \item \ipa{e} and \ipa{o} when stressed open up to \apa{E} and \apa{O} respectively. Example: \textbf{borag} \flav{rgodha} \ipa{"rgO.dha}, \emph{long}, and \textbf{egord} \ipa{"Egord}, \emph{examination}
 	\item word-final \ipa{l} after a consonant becomes syllabic \apa{\s{l}} (this creates a new syllable). Example: \textbf{moshl} \flav{moshl} \ipa{"mO.S\s{l}}, \emph{mother}
 	\item a vowel following \ipa{N} will become nasalized. Example: \textbf{ngon} \flav{ngon} \ipa{N\~on}, \emph{I (ergative)}
-	\item word-final \ipa{D} becomes geminated: \apa{D:}. Example: \textbf{my agaredh} \flav{my\\agaredh} \ipa{m1aga'reD:} \emph{goodbye}
+    \item word-final \ipa{D}, or \ipa{D} between two vowels becomes geminated: \apa{D:}. Example: \textbf{my agaredh} \flav{my\\agaredh} \ipa{m1aga'reD:} \emph{goodbye}
+    \item \ipa{r} alone between two vowels with at least the first unstressed becomes a flap: \apa{R}. Example: \textbf{pottarat} \flav{pottarat} \ipa{pot:a'Rat}, \emph{sew}.
 \end{itemize}
 
 \subsubsection{The tell-tale \emph{ytta}}
 
-The phoneme \ipa{1} represented by the letter \textbf{ytta} (\textbf{y}) requires clarification. We have already considered the merge \ipa{1r} \textrightarrow\apa{\s{r}}, so we exclude this case here. It should be noted that \apa{1} is an average sound over all dialects, and that the essential characteristic that sets it apart from \ipa{e} and \ipa{o} is only its being closed. Therefore all closed vowels, rounded and unrounded, and closed\textrightarrow closed dipththongs are allophones for \ipa{1}. Different dialects and accents of Flavan however employ different subsets of allophones with different pronunciation schemes. This allows a Flavan speaker to identify the origin of a speaker from his pronunciation of \textbf{ytta}s and his choice of closed vowels, a phenomenon known as the \textbf{tell-tale ytta} (\textbf{ytta robordam}).
+The phoneme \ipa{1} represented by the letter \textbf{ytta} (\textbf{y}) requires clarification. (We have already considered the merge \ipa{1r} \textrightarrow\apa{\s{r}}, so we exclude this case here). It should be noted that \apa{1} is an average sound over all dialects, and that the essential characteristic that sets it apart from \ipa{e} and \ipa{o} is only its being closed. Therefore all closed vowels, rounded and unrounded, and closed\textrightarrow closed dipththongs are allophones for \ipa{1}. Different dialects and accents of Flavan however employ different subsets of allophones with different pronunciation schemes. This allows a Flavan speaker to identify the origin of a speaker from his pronunciation of \textbf{ytta}s and his choice of closed vowels, a phenomenon known as the \textbf{tell-tale ytta} (\textbf{ytta robordam}).
 
 The ``standard'' pronunciation (Central Demorog) has only \emph{unrounded} vowels accompained by approximants, and no diphthongs. The idea is that the three different positions of unrounded back vowels (\ipa{i 1 W}) are employed when the ytta is between consonants of similar place of articulation, and a ``slide'' from one to another is made if the consonants are differently articulated. More simply: the consonant before is the row and the one after the column, the depicted sound is that of \textbf{y} when sandwiched between them.
 
 \begin{center}
 \begin{tabular}{c|c|c|c}
-        & \ipa{mpbtfnlt}  & \ipa{kg} & \ipa{N}\\
+        & \ipa{mpbtfnlt}  & \ipa{kgr} & \ipa{N}\\
         \hline\hline
         \ipa{mpbtfnlt} & \apa{i} & \apa{j1} &  \apa{jW}    \\ \hline
-        \ipa{kg} & \apa{1j} & \apa{1} & \apa{jW} \\ \hline
-        \ipa{N} & \apa{\textturnmrleg i} & \apa{W} & \apa{W}
+        \ipa{kgr} & \apa{1j} & \apa{1} & \apa{jW} \\ \hline
+        \ipa{N} & \apa{\textturnmrleg \~i} & \apa{\~W} & \apa{\~W}
 \end{tabular}
 \end{center}
 
@@ -521,23 +543,28 @@ The verb \textbf{ak}, meaning \emph{to be} in the sense of copula (i.e. ``the sk
 
 \section{Nouns}
 
-Nouns are declensed according to number and case.
+\begin{multicols}{2}
+
+Nouns are declensed according to number and case. Three main numbers are always present: \textbf{singular}, \textbf{dual} and \textbf{plural}. 
 
 
-
-\subsection{Number}
-
-Three main numbers are always present: \textbf{singular}, \textbf{dual} and \textbf{plural}. 
-
-\subsection{Case}
-
-\subsubsection{Ergative}
+\subsection{Ergative}
 
 The ergative case's role was already explained in section \ref{alignment}.
 
-The ergative case is \emph{unmarked} and it's the default (``lemma'') form for nouns.
+The ergative case is \emph{unmarked} and it's the default (``lemma'') form for nouns, in stark contrast with the typical situation for ergative languages in which the absolutive is the unmarked form.
 
-\subsubsection{Absolutive}
+The number declension in the ergative case is as follows:
+
+\begin{center}
+    \begin{tabular}[]{ c c c }
+             singular & dual & plural\\
+            \hline
+             -        & -ef  & -y
+    \end{tabular}
+\end{center}
+
+\subsection{Absolutive}
 
 The absolutive case's role was already explained in section \ref{alignment}.
 
@@ -548,35 +575,84 @@ The absolutive is marked by \textbf{first vowel opening} (FVO), the shift in the
 	Absolutive first vowel & a & a & a & o
 \end{tabular}
 
-and in addition, the number suffix becomes a number \emph{pre}fix.
+and in addition, the number suffix becomes a number \emph{pre}fix:
 
-\subsubsection{Genitive}
+\begin{center}
+    \begin{tabular}[]{r c c c}
+        & singular & dual & plural\\
+        \hline
+        doesn't begin in \textbf{y-}  &  -       & fe-   & y-\\
+        begins in \textbf{y-} & - & f- & -
+    \end{tabular}
+\end{center}
+
+\subsection{Genitive}
 
 The genitive signifies possession (alienable or inalienable), and origin.
 
-It is marked by the suffix \textbf{-t}. A few irregular genitives arise for some noun endings:
+It is marked by the suffix \textbf{-t} on the ergative form (after the number suffix). A few irregular genitives arise for some noun endings:
 
-\begin{tabular}{c | c}
-Ergative & Genitive\\
--g	& -kt\\
--t	&  -tt
+\begin{center}
+\begin{tabular}{c || c | c | c | c}
+Ergative & -k & -g & -t & -f\\
+Genitive & -kt & -kt & -tt & -fet
 \end{tabular}
+\end{center}
+
+
 
 If a noun is not part of these exceptions, and the suffix \textbf{-t} were still to create a nonexisting cluster, \textbf{-et} is used instead.
 
-\subsubsection{Dative / Locative}
+\subsection{Dative / Locative}
 
 The dative marks the receiving end of giving or communication. The locative instead signifies the noun represent a place where the action happens or towards which motion is intended.
 
-The dative is built through the prefix \textbf{o-}.
+The dative is built through the prefix \textbf{o-} on the ergative form.
 
-\subsubsection{Ablative / Instrumental}
+\subsection{Ablative / Instrumental}
+
+The ablative indicates motion away from or through, extraction, origin, topic. As the instrumental, it denotes the action happens by means or thanks to the noun.
+
+The ablative is marked by \textbf{first syllable reduplication} (FSR) which is the repetition of the first syllable with a vowel shift, namely if the first vowel is \textbf{e,o,y} the duplicated vowel is \textbf{a}, if it is \textbf{a} the duplicated vowel is \textbf{y}. To be precise, what is duplicated is only the onset cluster, the (shifted) nucleus, excluding the coda. 
+
+If the noun already starts in a vowel, then one only reduplicates the cluster right after it.
+
+A few examples:
+
+\begin{center}
+    \begin{tabular}[]{c | c}
+        Ergative & Ablative\\
+        \hline
+        borgoredh & baborgoredh\\
+        sodhl & sasodhl\\
+        shlarby & shlyshlarby\\
+        darg & dydarg \\
+        egord & gegord
+    \end{tabular}
+\end{center}
+
+
+\end{multicols}
+\hrule
+\subsection{Example declension}
+
+The noun \textbf{berb} \ipa{bErb}, \emph{arm} is declensed as follows:
+
+\begin{center}
+    \begin{tabular}[]{c|| c| c| c| c |c}
+            & ERG & ABS & GEN & DAT & ABL \\
+            \hline
+    singular& berb & barb & berbet & oberb & baberb \\
+    dual & berbef & febarb & berbefet & oberbef & baberbef\\
+    plural & berby & ybarb & berbyt & oberby & baberby
+    \end{tabular}
+\end{center}
+
 
 
 
 
 \pagebreak
-
 \section{Adjectives}
 
 Adjectives are incredibly simple in Flavan: they are not declensed nor do they align with the nouns they complement. Because of this adjective position is crucial for clarity; adjectives always come right after the noun they refer to.
@@ -604,16 +680,22 @@ This verbal form of comparison is preferrable, but if strictly necessary a true 
 
 The possible comparison verbs are
 
+\begin{center}
 \begin{tabular}{c | c}
 	merak & more than\\
 	dhlamerak & less than\\
 	kobymat & equally as\\
 	dhlakobymat & differently from
 \end{tabular}
+\end{center}
 
 %Superlatives can be formed by replacing the dative with the expression \textbf{obydhek}, roughly ``\emph{than all}''.
 
+
+
+
 \pagebreak
+
 
 
 \section{Verbs}\label{verbs}
@@ -703,6 +785,8 @@ The possible comparison verbs are
 	\subsection{Participle, gerund, gerundive}
 	Participles can be constructed as agents (that is, subjects of transitive verbs) by adding the prefix \textbf{ro-}, or patients (subjects of intransitive verbs or objects of transitive verbs) with \textbf{de-}. Example: \textbf{fattarym ropyrdak}, \emph{the neighbour that is bringing}, \textbf{feshlarb depyrdak}, \emph{the water that is being brought}.
 
+    But most interestingly, there is also an indirect participle marking the indirect object (the one that would go in the dative case) of the action, with prefix \textbf{do-}. For example, \textbf{kad}, \emph{give} has \textbf{dokat} \ipa{do'kad} \emph{receiving}
+
 		A participle can be used as it is as a noun, thus yielding a gerund. The gerund is declensed as a normal noun.
 
 		Combining a participle/gerund with mood and tense can yield some interesting constructions. A gerundive can be built with a patient participle of a posterior deontic verb: \textbf{ropordedh}, \emph{the one that must be brought}.
@@ -710,13 +794,55 @@ The possible comparison verbs are
 		
 	\subsection{Perfectiveness}
 
+    \cmmnt{do perfectiveness}
+
 \end{multicols}
 
 
 \pagebreak
 
 
+
+\section{Relative Clauses}
+
+Flavan doesn't use relative pronouns to form relative clauses in the traditional sense, for relative clauses in the in the position of subject, object, intransitive subject \emph{and} indirect object. Instead, it employs directly its extensive participle/gerund system (for bound/free relative clauses respectively).
+
+As any adjective, the participle goes after the noun it refers to, and the rest of the relative clause is in standard word order with respect to the participle, which is the main verb from the subclause's point of view. Moreover, relative clauses are Flavan relative tense's time to shine: the participle's tense denotes time \emph{relative} to the time of the main clause (which is in turn relative to background time).
+
+Examples for each position (with the subclause in square brackets for clarity):
+
+\begin{center}
+    
+
+    \textbf{ERGATIVE}\\*
+    ``I saw a man that was eating (transitive)''\\
+    \textbf{Ngon toreb [rorbam] moratt}
+    \ipa{N\~On 'tOreb ro'rbam mo'rat:}\\
+    me.ERG man.ABS (eat.IND.PRES).(AG PART) see.IND.ANT\\
+    \vspace{1em}
+    \textbf{ABSOLUTIVE}\\*
+    ``I saw a man that was running''\\
+    \textbf{Ngon toreb [depapat] moratt}
+    \ipa{N\~On 'tOreb depa'pat mo'rat:}\\
+    me.ERG man.ABS (eat.IND.PRES).(PAT PART) see.IND.ANT\\
+
+    \vspace{1em}
+    \textbf{DATIVE}\\*
+    ``I saw the man that you gave the book to''\\
+    \textbf{Ngon toreb [my kagmenyr dokatt] moratt}
+    \ipa{N\~On 'tOreb depa'pat mo'rat:}\\
+    me.ERG man.ABS you.ERG book.ABS (give.IND.PRES).(DAT PART) see.IND.ANT\\
+
+    (note: \textbf{dokatt} is in the anterior tense since the giving of the book was certainly anterior to the main action.)
+
+\end{center}
+
+\cmmnt{add other positions}
+
+\pagebreak
 \section{Dictionary}
+
+Flavan script transcription is rotated to horizontal for formatting purposes.
 
 \begin{multicols}{2}
 \input{../dictionary/texicon}

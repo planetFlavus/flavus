@@ -78,7 +78,7 @@ for word in alphabetical:
         part_of_speech = None
 
 
-    tex += r" \flav{"+word+r"}"
+    tex += r" \fliv{"+word+r"}"
 
     tex += r" \apa{"+pronunciate(word)+r"}"
 
