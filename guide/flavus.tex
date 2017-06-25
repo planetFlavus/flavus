@@ -1,6 +1,10 @@
 \documentclass[11pt,oneside]{memoir}
 \usepackage[margin=0.5in]{geometry}
 
+\usepackage{kpfonts}
+
+%\usepackage{libertine}
+
 %\usepackage{showframe} % debug
 
 \setlength{\parindent}{0pt}
@@ -347,6 +351,21 @@ In this interesting example, the refrain is doubly deceiving as it also sets up 
 \vfill
 
 \pagebreak
+
+\section{Introduction}
+
+The language that Flavans speak in does not seem to have any discernible relationship with any ever spoken on Earth. It is thought therefore that most of the basic structure of the Flavan language has indipendently developed on the planet. As a result, it includes a combination of alien and unfamiliar constructions and more usual features that might have the character of linguistic universals of all humans. It is hard however to make this kind of generalizing statements with confidence since Flavus has likely only ever hosted \textbf{one language} at any given time: the constant rearrangement of population, and an army of travelling merchants perennially jumping from village to village, has guaranteed that differences in all aspects of culture, language in particular, are smoothed out and always remain somewhat modest. Thus Flavan enjoys limited regional variations, almost entirely in pronunciation, and remains mutually intelligible from the left-most of Bymarog villages to the antipodal dialect of the Demorog settlements in the far-right.
+
+As per the origins of this language, little is known about Flavans in general before around 1500 years ago. Villages at this time likely only occupied a smaller area in the central region, and the small population used a strongly agglutinative language which is known as \textbf{classical Flavan}, written in a rune-like alphabetic script meant for carving. Classical Flavan's pronunciation is unknown but has been tentatively reconstructed as having the unusual four-vowel inventory \ipa{a e o 1}.
+
+Between 900 and 800 years ago the population increased dramatically as technological advances allowed Flavans to explore and colonize the entire survivable Northern cap, resulting in the branching of the Bymarog\footnote{the name \textbf{bymarog} (flame-writer) is used here anacronistically, since the modern script has not been introduced yet at this point.} culture in the somewhat isolated left region. It's only after the opening of the School of Karobet, which introduced new writing tools and the \textbf{modern Flavan script}, an abugida, that one begins to find an immense amount of written documents, most importantly maps and village registries, which testify that strong changes have already begun in the spoken language, mostly moving it into slightly fusional territory.
+
+In the remaining years, Flavan has evolved significantly in syntax/grammar (developing a very strict word order for example) and phonology (the Classical Flavan phoneme \ipa{1} was unstable and underwent fragmentation into significantly different sounds in the various dialects). The cultural and linguistic divide between \textbf{Demorog} (``square-writers'') and \textbf{Bymarog} (``flame-writers'') was born. However, the aforementioned continuous cross-cultural contact has kept Flavan relatively very similar to itself as it changed in time. The current situation is known as \textbf{Modern Flavan}, and is the language this chapter will try to introduce.
+
+Every respectable reference grammar on a language should at least present the language's own name for itself before anything else; however, this is simply impossible in our case: Flavans know one culture, with one language, and one script - granted, with modest variations in customs, manner of speaking, and writing styles. They do not conceive of a boundary between themselves and an outside - they don't need a word to mark this border. Therefore, there is no Flavan word for \emph{the Flavan language}, or \emph{the Flavan people}. To them, it's just speaking, and just people.
+
+\pagebreak
+
 \section{Phonology and phonotactics}
 
 The phonetic inventory of Flavan is most conveniently presented by means of their own organization in terms of an ``alphabet'', which is a list of allowable consonant clusters and single vowels. Curiosly, they arbitrarily separate consonantal sounds into ``common'' and ``uncommon'', crudely reflecting the frequency of those phonemes in spoken language. The following chart lists the Flavan names for the phonemes, their average Demorog and Bymarog pronunciations, their romanization, and also introduces the corresponding glyphs in the Flavan abugida, which will be better explained later.
@@ -484,7 +503,17 @@ Because the Bymarog \textbf{ytta} is shifted towards the back and rounded, their
 
 In completely opposite fashion, far Demorog do tend to pronounce \textbf{y} as \apa{i} almost always, but by contrast push \textbf{o} to \apa{u} and \textbf{e} to \apa{E}.
 
-\cmmnt{pronunciation examples}
+To give a rough idea of how the different dialects sound, here are a few words with their local pronunciations:
+
+\begin{center}
+\begin{tabular}[]{c | c | c | c}
+    Romanization & Central Demorog & Bymarog & Far Demorog \\
+    \hline
+    \textbf{gydda} & \apa{g1j"d:a} & \apa{gu"d:a} & \apa{gi"da} \\
+    \textbf{mydhlark} & \apa{mj1D:'lark} & \apa{muz"lalk} & \apa{miT"rark} \\
+    \textbf{kagmenyr} & \apa{kag"mEn\s{r}} & \apa{kag"minul} & \apa{kag"mEn\s{r}}
+\end{tabular}
+\end{center}
 
 The following diagrams present the Flavan abstract vowel inventory and the range of phones the dialects use to implement them. The colour encodes which phonemes that sound is allophonic for.
 
@@ -539,7 +568,7 @@ The following diagrams present the Flavan abstract vowel inventory and the range
 \end{vowel}
 \end{minipage}
 
-It should be stressed that all current variants of Flavan are mutually intelligible, and to most speakers these differences in vowel pronunciation are nothing more than a weird curiosity.
+It should be stressed that all current variants of Flavan are mutually intelligible, and to most speakers these differences in vowel pronunciation are nothing more than a weird curiosity. We will not comment further on these technicalities of pronunciation and will focus of the grammar of the language, employing the Central Demorog pronunciation as the standard phonology.
 
 \section{Stress and intonation}
 
@@ -559,27 +588,40 @@ An example: \textbf{kottla} \flav{\hspace{-5pt}kottlaa} (the cardinal numeral 40
 
 \section{Word order and morphosyntactic alignment}\label{alignment}
 
+\begin{multicols}{2}
+
 Flavan could be briefly described as a SOV language, meaning sentences follow the order subject-object-verb. For example, \emph{Shlem eats a dhlorg} could be translated as
 
-\begin{center}
-	\textbf{Shlem dhlarg rbam}\\
-	Shlem.SUBJECT dhlorg.OBJECT eats\\
-	\Flav{shlem dhlarg rbam}
-\end{center}
+\newcommand{\sidebysider}[4]{\vspace{5pt} \begin{minipage}{#3\columnwidth} \begin{center}#1\end{center} \end{minipage} \hfill \begin{minipage}{#4\columnwidth} \begin{center} #2 \end{center}\end{minipage} \vspace{5pt}}
+
+\newcommand{\sidebyside}[2]{\sidebysider{#1}{#2}{0.5}{0.5}}
+
+%\begin{minipage}{0.5\columnwidth}
+%\begin{center}
+%	\textbf{Shlem dhlarg rbam}\\
+%	Shlem.SUBJECT dhlorg.OBJECT eats\\
+%\end{center}
+%\end{minipage}
+%\hfill
+%\begin{minipage}{0.5\columnwidth}
+%    \begin{center}
+%	\Flav{shlem dhlarg rbam}
+%\end{center}
+%\end{minipage}
+
+\sidebysider{	\textbf{Shlem dhlarg rbam}\\
+    Shlem.SUBJECT dhlorg.OBJECT eats}{\Flav{shlem dhlarg rbam}}{0.6}{0.4}
+
 
 However, this is not strictly correct and potentially confusing because Flavan has ergative-absolutive alignment. This means that the distinction between subject and object is not well-defined, while entities involved in an actions are instead classified as \textbf{agents} (subjects of transitive actions) or \textbf{patients} (objects of transitive actions or subjects of intransitive actions). In fact, Flavan is unusual in being more ``thorough'' in its ergativity than most earthly ergative languages. The word order is thus better described as agent-patient-verb, or APV. 
 
 The nouns/pronouns that represent the agent/patient are declensed respectively in the \textbf{ergative}/\textbf{absolutive} cases. This means for example:
 
-\begin{center}
-	\textbf{ngon nar rbap} - \emph{I ate it}\\
-	me.ERG it.ABS ate\\
-	\Flav{ngon nar rbap}\\
-	\vspace{10pt}
-	\textbf{ngan bodark} - \emph{I slept}\\
-	me.ABS slept\\
-	\Flav{ngan bodark}
-\end{center}
+\sidebysider{\textbf{ngon nar rbap} - \emph{I ate it}\\
+    me.ERG it.ABS ate}{	\Flav{ngon nar rbap}}{0.6}{0.4}
+
+   \sidebysider{	\Flav{ngan bodark}}{\textbf{ngan bodark} - \emph{I slept}\\
+    me.ABS slept}{0.4}{0.6}
 
 The sleeper (actor of an intransitive action) is treated like the eaten (object of a transitive action).
 
@@ -587,11 +629,9 @@ In addition, many verbs admit an \textbf{indirect object}, generally the person 
 
 There is yet another alien element to Flavan syntax, the \textbf{wanter}. This can only appear if the verb is in the deontic mood (which expresses wishes, hopes or orders) and specifies who actually desires the action to happen. The wanter is declensed in the \textbf{dative} case too, but comes \textbf{after} the verb. Example:
 
-\begin{center}
-	\textbf{Shlem dhlarg rbem ngof} - \emph{I want Shlem to eat the dhlorg} \\
-	Shlem.ERG dhlorg.ABS eat.DEONTIC me.DAT\\
-	\Flav{shlem dhlarg\\ rbem ngof}
-\end{center}
+
+    \sidebysider{\Flav{shlem dhlarg\\ rbem ngof}}{\textbf{Shlem dhlarg rbem ngof} \\ \emph{I want Shlem to eat the dhlorg} \\
+Shlem.ERG dhlorg.ABS eat.DEONTIC me.DAT}{0.3}{0.7}
 
 Thus to conclude, the order could be simplified as APIVW, or
 
@@ -605,6 +645,7 @@ Adverbs modifying the verb can be introduced, generally between I and V, though 
 
 Because the wanter being specified is actually uncommon, Flavan verb phrases are strongly \textbf{head-final}.
 
+
 \subsection{Noun phrases}
 
 By contrast, noun phrases (i.e. phrases that occupy the roles of either A, P, I or W) are strongly \textbf{head-initial}. The head noun or pronoun comes first, declensed for number and case. It is then followed by adjectives or adjective phrases. In particular the adjective can include participles, which come with their own still strictly APIVW subclause, with V occupied by the participle and either A/P/I embodied by the head noun; this will be clarified in section \ref{verbs} and section \ref{relative}.
@@ -617,18 +658,18 @@ Flavan ``does not have the antipassive'', which means transitive verbs without a
 
 The verb \textbf{ak}, meaning \emph{to be} in the sense of copula (i.e. ``the sky is blue'') has two unusual properties that deserve care:
 
-\begin{itemize}
-	\item It is \textbf{transitive}. The complement to the subject is literally treated as an object and thus takes the absolutive, while the subject itself is in the ergative. Example:
-\begin{center}
+	1: It is \textbf{transitive}. The complement to the subject is literally treated as an object and thus takes the absolutive, while the subject itself is in the ergative. Example:
+
+\sidebysider{
 	\textbf{Shlem katarotta attk} - \emph{Shlem was a woman}\\
-	Shlem.ERG woman.ABS was\\
-	\Flav{shlem katarotta attk}
-\end{center}
-	\item It always disappears in the present indicative, an example of \textbf{zero copula}. So \emph{Shlem is a woman} is literally \textbf{Shlem katarotta}. It readily reappears when conjugating the verb in any way, for example in the interrogative mood: \textbf{Shlem katarotta yk?} - \emph{is Shlem a woman?}. Thus, the specific word \textbf{ak} does not actually exist in Flavan.
-\end{itemize}
+Shlem.ERG woman.ABS was\\}{	\Flav{shlem katarotta attk}}{0.7}{0.3}
+
+2: It always disappears in the present indicative, an example of \textbf{zero copula}. So \emph{Shlem is a woman} is literally \textbf{Shlem katarotta}. It readily reappears when conjugating the verb in any way, for example in the interrogative mood: \textbf{Shlem katarotta yk?} - \emph{is Shlem a woman?}. Thus, the specific word \textbf{ak} does not actually exist in Flavan.
 
 \pagebreak
 
+
+\end{multicols}
 \section{Nouns}
 
 \begin{multicols}{2}
@@ -931,6 +972,17 @@ So, \textbf{nar yk} might mean ``this one here, as opposed to that other one far
 
 		Combining a participle/gerund with mood and tense can yield some interesting constructions. A gerundive can be built with a patient participle of a posterior deontic verb: \textbf{ropordedh}, \emph{the one that must be brought}.
 
+
+\subsection{Irregular participles and \emph{ak-} verbs}
+
+Some verbs, those starting on \textbf{ak-} (except \textbf{ak} itself) construct one of their participles irregularly. To be exact, the irregular participle itself is the original form, and the verb is derived from it. The remaining two participles are constructed regularly from the verb.
+
+\begin{tabular}[]{*{5}{c}}
+    Participle & Translation & Voice & Verb & Translation\\
+    rog & writer, writing tool & Agent & akrog & write\\
+    rkygo & newborn & Patient & akarkygat & be born\\
+   
+\end{tabular}
 		
 	\subsection{Perfectiveness}
 
@@ -1028,7 +1080,7 @@ To which we can add the powers of sixteen:
         4096 & $16^3$ & kottla & \ipa{"kOt:la} & complete \\
         65536 & $16^4$ & gardakottla & \ipa{gardaDo"Na} & $16 \times 16^3$ \\
         1048576 & $16^5$ & dhongakottla & \ipa{DoNa"kOt:la} & $16^2 \times 16^3$\\
-        \multicolumn{5}{l}{\ldots}
+        \multicolumn{5}{c}{\ldots}
     \end{tabular}
 \end{center}
 
@@ -1043,7 +1095,7 @@ Then reading literally, the word representing the number is
     \emph{nine (plus) three-sixteen (plus) three-4096}
 \end{center}
 
-This insistence of Flavans on reading from least significant to most significant digit is frustrating and contrasts with their most-significant-first written representation.
+This insistence of Flavans on reading from least significant to most significant digit is certainly frustrating especially in light of their most-significant-first written representation of numbers.
 
 \pagebreak
 
@@ -1051,7 +1103,7 @@ This insistence of Flavans on reading from least significant to most significant
 
 Flavan script transcription is rotated to horizontal for formatting purposes.
 
-\begin{multicols}{2}
+\begin{multicols}{3}
 \input{../dictionary/texicon}
 \end{multicols}
 

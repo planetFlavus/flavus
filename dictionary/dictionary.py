@@ -1,5 +1,8 @@
 import yaml
 import re
+import os,sys
+
+os.chdir(os.path.dirname(sys.argv[0]))
 
 def pronunciate(word):
     subs = [
@@ -83,21 +86,24 @@ for word in alphabetical:
     tex += r" \apa{"+pronunciate(word)+r"}"
 
 
-    tex += r" - "
+    tex += r" "
 
     if part_of_speech:
-        tex += part_of_speech + ", "
+        tex += r"\emph{" + part_of_speech +r"}"
+
+    tex += r" \textperiodcentered "
 
     if not isinstance(translation, basestring):
         translation_text = ""
         for i in range(len(translation)):
-            translation_text += "%d. "%(i+1) + r"\emph{"+translation[i]+ r"} "
+            translation_text += "%d. "%(i+1) + r""+translation[i]+ r" "
     else:
-        translation_text = r"\emph{"+translation+r"}"
+        translation_text = r""+translation+r""
 
     tex += translation_text 
+    tex += r"\\"
 
-    tex += r"\\ \vspace{7pt}"
+#    tex += r"\\ \vspace{7pt}"
 
 outfile = open("texicon.tex",'w')
 outfile.write(tex)

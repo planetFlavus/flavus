@@ -164,7 +164,9 @@ kyryd:
     part: n
 
 mak:
-    tr: lead, guide, teach, pave the way
+    tr: 
+        - lead, guide, 
+        - teach, pave the way
     part: v tr
 
 mashl:
@@ -476,3 +478,49 @@ megyn:
         - (vulgar) finger
     part: n
 
+romak:
+    tr:
+        - teacher
+        - Master
+    part: n
+
+rdak:
+    tr: again
+    part: n
+
+korbaradem:
+    tr: all this time, through the whole thing, throughout, this whole time
+    part: adv
+    note: sets verb to progressive, with the end of the action at the moment in time indicated by the verb.
+
+dhyn:
+    tr: but, surprisingly, yet
+    part: conjuction
+
+ttla:
+    tr: good-looking, attractive, pretty
+    part: adj
+
+ttla:
+    tr: beauty, beautiful things
+    part: n
+
+ttlyttla:
+    tr: beautiful, stunning
+    part: adj
+
+dhlattla:
+    tr: ugly
+    part: adj
+
+rog:
+    tr: 
+        - writer
+        - any writing tool
+    part: n
+
+
+
+rkygo:
+    tr: newborn
+    part: n
