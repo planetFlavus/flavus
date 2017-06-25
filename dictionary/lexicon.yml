@@ -60,6 +60,10 @@ bord:
     tr: death
     part: n
 
+rbodat:
+    tr: kill
+    part: v tr
+
 da:
     tr: 'no'
     part: response particle
@@ -371,3 +375,104 @@ pat:
 papat:
     tr: run
     part: v intr
+
+rodan:
+    tr: day
+    part: n
+
+kyttkat:
+    tr: meet
+    part: v tr
+
+forba:
+    tr: about, approximately
+    part: adv
+
+dyp:
+    tr: after
+    part: conjunction
+
+shledd:
+    tr: daughter
+    part: n
+
+formadat:
+    tr: act, behave
+    part: v intr
+
+fettfok:
+    tr: strangely, weirdly, in an unusual way
+    part: adv
+
+fyttfyt:
+    tr: immediately, right away
+    part: adv
+
+
+taryng:
+    tr: tent
+    part: n
+
+rdonarod:
+    tr: flake
+    part: n
+ 
+rdonaroda:
+    tr: flaky
+    part: adj
+
+eat:
+    tr: see
+    part: v tr
+
+gyrb:
+    tr: leg
+    part: n
+
+fam:
+    tr: 
+        - hand
+        - five
+    part: n
+
+nynga:
+    tr:
+        - sweaty
+        - sticky
+    part: adj
+
+nyngyr:
+    tr: sweat
+    part: n
+
+gysadhl:
+    tr: greedy person, someone blinded by desire
+    part: n
+
+godhl:
+    tr: desire
+    part: n
+
+dhlekyr:
+    tr: tree-like plunt
+    part: n
+
+rykashl:
+    tr:
+        - membrane, sac
+        - peel
+        - placenta
+        - water canteen
+    part: n
+
+ttarkaset:
+    tr: liver
+    part: n
+
+megyn:
+    tr:
+        - stick, rod
+        - tent pole
+        - (vulgar) finger
+    part: n
+

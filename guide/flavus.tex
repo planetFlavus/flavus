@@ -11,7 +11,7 @@
 \usepackage{verse}
 \usepackage{tipa}
 \usepackage{tabu}
-\usepackage{xcolor}
+\usepackage[dvipsnames]{xcolor}
 \usepackage{multirow,bigdelim}
 \usepackage{multicol}
 \usepackage[generate,ps2eps]{abc}
@@ -23,6 +23,10 @@
 \usepackage{rotating}
 \usepackage{varwidth}
 
+\usepackage{array}
+
+\usepackage{vowel}
+
 \usepackage[11pt]{moresize}
 \usepackage{anyfontsize}
 
@@ -32,7 +36,7 @@
 
 \newcommand{\cmmnt}[1]{\textcolor{red}{#1}}
 
-\newcommand{\sectionbreak}{\clearpage}
+%\newcommand{\sectionbreak}{\clearpage}
 \newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
 \newcommand\crekt[1][black]{\crule[#1]{3cm}{1cm}}
 %\newcommand\crekt[1][black]{\fboxsep=10mm \fboxrule=1mm
@@ -402,9 +406,11 @@ The phonetic inventory of Flavan is most conveniently presented by means of thei
 		Glyph & Rom. & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
 		\hline 
 None		& a	& \ipa{a}	& \apa{a}	& atta\\
-\flav{e}	& e	& \ipa{e} (or \apa{E})	& \apa{e} 	& etta\\
-\flav{y}	& y	& \ipa{1} (or \apa{ju})	& \apa{u} (or \apa{ui}) & ytta \\
-\flav{o}	& o	& \ipa{o} (or \apa{O})	& \apa{o} & ordar\\
+\flav{e}	& e	& \ipa{e} (or \apa{E})	& \apa{e} (or \apa{i}) 	& etta\\
+\flav{y}	& y	& \ipa{1} (or \apa{i}, \apa{W})	& \apa{u}, \apa{y} & ytta \\
+\flav{o}	& o	& \ipa{o} (or \apa{O})	& \apa{O} & ordar\\
+
+    & & \multicolumn{2}{c}{(see section \ref{ytta})} &  
 
 
 
@@ -417,6 +423,7 @@ None		& a	& \ipa{a}	& \apa{a}	& atta\\
 \footnotetext{The \textbf{pode} (//) is not an actual phoneme, but simply a vowel carrier necessary to represent a vowel without a preceding cluster in the Flavan script.}
 
 
+
 A flavan word is just an alternating sequence of consonant clusters and vowels (with at least one vowel). So, if C is a cluster and V is a vowel, words can be V, CV, VC, CVC, VCV, CVCV, \emph{etc}. Any clusters can be at the beginning, middle or end of a word.
 
 It is occasionally possible for two vowels to be consecutive (VV) as a consequence of affixing. In that case, if the vowels are different they form a diphthong.
@@ -427,7 +434,7 @@ As a final note, it is possible for the cluster \apa{kt} to appear exclusively i
 
 \begin{itemize}
 	\item \ipa{1r} before another consonant becomes the syllabic consonant \apa{\s{r}}. Example: \textbf{yrk} \flav{yrk} \ipa{\s{r}k}, \emph{and}
-    \item \ipa{1m} before another consonant becomes the syllabic consonant \apa{\s{m}}. Example: \textbf{kym} \ipa{k\s{m}}, \emph{while}.
+    \item \ipa{1m} or \ipa{1n} before another consonant becomes the syllabic consonant \apa{\s{m}} or \apa{\s{n}}. Example: \textbf{kym} \ipa{k\s{m}}, \emph{while}.
     \item \ipa{e} and \ipa{o} when stressed open up to \apa{E} and \apa{O} respectively. Example: \textbf{borag} \flav{rgodha} \ipa{"rgO.dha}, \emph{long}, and \textbf{egord} \ipa{"Egord}, \emph{examination}
 	\item word-final \ipa{l} after a consonant becomes syllabic \apa{\s{l}} (this creates a new syllable). Example: \textbf{moshl} \flav{moshl} \ipa{"mO.S\s{l}}, \emph{mother}
 	\item a vowel following \ipa{N} will become nasalized. Example: \textbf{ngon} \flav{ngon} \ipa{N\~on}, \emph{I (ergative)}
@@ -435,35 +442,104 @@ As a final note, it is possible for the cluster \apa{kt} to appear exclusively i
     \item \ipa{r} alone between two vowels with at least the first unstressed becomes a flap: \apa{R}. Example: \textbf{pottarat} \flav{pottarat} \ipa{pot:a'Rat}, \emph{sew}.
 \end{itemize}
 
-\subsubsection{The tell-tale \emph{ytta}}
+\subsubsection{The tell-tale \emph{ytta} and regional variation}\label{ytta}
 
-The phoneme \ipa{1} represented by the letter \textbf{ytta} (\textbf{y}) requires clarification. (We have already considered the merge \ipa{1r} \textrightarrow\apa{\s{r}}, so we exclude this case here). It should be noted that \apa{1} is an average sound over all dialects, and that the essential characteristic that sets it apart from \ipa{e} and \ipa{o} is only its being closed. Therefore all closed vowels, rounded and unrounded, and closed\textrightarrow closed dipththongs are allophones for \ipa{1}. Different dialects and accents of Flavan however employ different subsets of allophones with different pronunciation schemes. This allows a Flavan speaker to identify the origin of a speaker from his pronunciation of \textbf{ytta}s and his choice of closed vowels, a phenomenon known as the \textbf{tell-tale ytta} (\textbf{ytta robordam}).
+The phoneme \ipa{1} represented by the letter \textbf{ytta} (\textbf{y}) requires clarification; this will actually expand on a discussion about vowels in general. (We have already considered the merge \ipa{1r} \textrightarrow\apa{\s{r}} and similar, so we exclude this case here). It should be noted that \apa{1} is an average sound over all dialects, and that the essential characteristic that sets it apart from \ipa{e} and \ipa{o} is only its being closed. Therefore all closed vowels, rounded and unrounded, and closed\textrightarrow closed dipththongs are allophones for \ipa{1}. Different dialects and accents of Flavan however employ different subsets of allophones with different pronunciation schemes. This allows a Flavan speaker to identify the origin of a speaker from his pronunciation of \textbf{ytta}s and his choice of closed vowels, a phenomenon known as the \textbf{tell-tale ytta} (\textbf{ytta robordam}).
 
-The ``standard'' pronunciation (Central Demorog) has only \emph{unrounded} vowels accompained by approximants, and no diphthongs. The idea is that the three different positions of unrounded back vowels (\ipa{i 1 W}) are employed when the ytta is between consonants of similar place of articulation, and a ``slide'' from one to another is made if the consonants are differently articulated. More simply: the consonant before is the row and the one after the column, the depicted sound is that of \textbf{y} when sandwiched between them.
+The ``standard'' pronunciation (\textbf{Central Demorog}) has only \emph{unrounded} closed vowels accompained by approximants, and no diphthongs. The idea is that the three different positions of unrounded closed vowels (\ipa{i 1 W}) are employed when the ytta is between consonants of similar place of articulation, and a ``slide'' from one to another is made if the consonants are differently articulated. More simply: the consonant before is the row and the one after the column, the depicted sound is that of \textbf{y} when sandwiched between them.
+
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+
 
 \begin{center}
-\begin{tabular}{c|c|c|c}
-        & \ipa{mpbtfnlt}  & \ipa{kgr} & \ipa{N}\\
+    \begin{tabular}{|*{4}{M{2cm}|}}
+        \hline
+    & \ipa{mpbtfnlt}  & \ipa{kgrsS} & \ipa{N}\\
         \hline\hline
-        \ipa{mpbtfnlt} & \apa{i} & \apa{j1} &  \apa{jW}    \\ \hline
-        \ipa{kgr} & \apa{1j} & \apa{1} & \apa{jW} \\ \hline
-        \ipa{N} & \apa{\textturnmrleg \~i} & \apa{\~W} & \apa{\~W}
+        \ipa{mpbtfnlt} & \apa{i} & \apa{j1} &  \apa{jW}    \\[5pt] \hline
+        \ipa{kgrsS} & \apa{1j} & \apa{1} & \apa{jW} \\[5pt] \hline
+        \ipa{N} & \apa{\textturnmrleg \~i} & \apa{\~W} & \apa{\~W}\\[5pt] \hline
 \end{tabular}
 \end{center}
 
-If either side doesn't have consonants the values on the diagonal are taken.
+Having no consonant is equivalent to the second group.
 
-Another interesting system is that of the Bymarog. They do have more in the rounding department, but no approximants: 
+Another interesting system is that of the Bymarog. For them, \textbf{y} is always rounded: \apa{u} or \apa{y}, but with a strong predominance of \apa{u}. They follow the scheme:
+
+%Another interesting system is that of the Bymarog. They do have more in the rounding department, but no approximants: 
 
 \begin{center}
-\begin{tabular}{c|c|c|c}
-        & \ipa{mpbtfnlt}  & \ipa{kg} & \ipa{N}\\
+    \begin{tabular}{|*{4}{M{2cm}|}}
+        \hline
+        & \ipa{mpbtfnlt}  & \ipa{kgrsS} & \ipa{N}\\
         \hline\hline
-        \ipa{mpbtfnlt} & \apa{i} & \apa{u} &  \apa{u}    \\ \hline
-        \ipa{kg} & \apa{y} & \apa{1} & \apa{u} \\ \hline
-        \ipa{N} & \apa{y} & \apa{u} & \apa{u}
+        \ipa{mpbtfnlt} & \apa{y} & \apa{u} &  \apa{u}    \\[5pt] \hline
+        \ipa{kgrsS} & \apa{y} & \apa{u} & \apa{u} \\[5pt] \hline
+        \ipa{N} & \apa{u} & \apa{u} & \apa{u}\\[5pt]\hline
 \end{tabular}
 \end{center}
+
+Because the Bymarog \textbf{ytta} is shifted towards the back and rounded, their \textbf{e} actually moves to \apa{i}, and \textbf{o} becomes always \apa{O} to be distinguishable.
+
+In completely opposite fashion, far Demorog do tend to pronounce \textbf{y} as \apa{i} almost always, but by contrast push \textbf{o} to \apa{u} and \textbf{e} to \apa{E}.
+
+\cmmnt{pronunciation examples}
+
+The following diagrams present the Flavan abstract vowel inventory and the range of phones the dialects use to implement them. The colour encodes which phonemes that sound is allophonic for.
+
+\begin{minipage}{0.2\textwidth}
+    \begin{center} \textbf{Flavan Phonemes}\end{center}
+
+\begin{vowel}
+    \putcvowel{\color{red}a}{4}
+    \putcvowel{\color{YellowOrange}e}{2}
+    \putcvowel{\color{blue}o}{7}
+    \putcvowel{\color{OliveGreen}\textipa{1}}{9}
+\end{vowel}
+
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\textwidth}
+
+    \begin{center} \textbf{Central Demorog}\end{center}
+\begin{vowel}
+    \putcvowel{\color{red}a}{4}
+    \putcvowel{\color{YellowOrange}e}{2}
+    \putcvowel{\color{YellowOrange}\textipa{E}}{3}
+    \putcvowel{\color{blue}\textipa{O}}{6}
+    \putcvowel{\color{OliveGreen}i}{1}
+    \putcvowel{\color{OliveGreen}\textipa{W}}{8}
+    \putcvowel{\color{blue}o}{7}
+    \putcvowel{\color{OliveGreen}\textipa{1}}{9}
+\end{vowel}
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\textwidth}
+
+    \begin{center} \textbf{Bymarog}\end{center}
+\begin{vowel}
+    \putcvowel{\color{red}a}{4}
+    \putcvowel{\color{YellowOrange}e}{2}
+    \putcvowel{\color{blue}\textipa{O}}{6}
+    \putcvowel[l]{\color{YellowOrange}i}{1}
+    \putcvowel[r]{\color{OliveGreen}y}{1}
+    \putcvowel{\color{OliveGreen}u}{8}
+\end{vowel}
+\end{minipage}
+\hfill
+\begin{minipage}{0.2\textwidth}
+
+    \begin{center} \textbf{Far Demorog}\end{center}
+\begin{vowel}
+    \putcvowel{\color{red}a}{4}
+    \putcvowel{\color{YellowOrange}\textipa{E}}{3}
+    \putcvowel{\color{OliveGreen}i}{1}
+    \putcvowel{\color{blue}\textipa{u}}{8}
+\end{vowel}
+\end{minipage}
+
+It should be stressed that all current variants of Flavan are mutually intelligible, and to most speakers these differences in vowel pronunciation are nothing more than a weird curiosity.
 
 \section{Stress and intonation}
 
@@ -478,6 +554,8 @@ Absolute vowel lengths are not distinguished phonemically in Flavan; however the
 
 An example: \textbf{kottla} \flav{\hspace{-5pt}kottlaa} (the cardinal numeral 4096) starts as \textbf{kòttla} according to rule 1. Rule 2 changes to \textbf{kottlà}, but rule 3 changes back to \textbf{kòttla} because of the geminated t. Rule 4 does not apply, as there is no final cluster. Thus \textbf{kòttla} is the final stress, and pronunciation is \ipa{"kOt:la}.
 
+
+\cmmnt{intonation}
 
 \section{Word order and morphosyntactic alignment}\label{alignment}
 
@@ -505,7 +583,9 @@ The nouns/pronouns that represent the agent/patient are declensed respectively i
 
 The sleeper (actor of an intransitive action) is treated like the eaten (object of a transitive action).
 
-There is yet another alien element to Flavan syntax, the \textbf{wanter}. This can only appear if the verb is in the deontic mood (which expresses wishes, hopes or orders) and specifies who actually desires the action to happen. The wanter is declensed in the \textbf{dative} case, and comes after the verb. Example:
+In addition, many verbs admit an \textbf{indirect object}, generally the person or thing that the action tends to move towards or to which something is given to or provided to or sent towards as a result. The indirect object is in the \textbf{dative} case and goes \textbf{before} the verb.
+
+There is yet another alien element to Flavan syntax, the \textbf{wanter}. This can only appear if the verb is in the deontic mood (which expresses wishes, hopes or orders) and specifies who actually desires the action to happen. The wanter is declensed in the \textbf{dative} case too, but comes \textbf{after} the verb. Example:
 
 \begin{center}
 	\textbf{Shlem dhlarg rbem ngof} - \emph{I want Shlem to eat the dhlorg} \\
@@ -513,13 +593,21 @@ There is yet another alien element to Flavan syntax, the \textbf{wanter}. This c
 	\Flav{shlem dhlarg\\ rbem ngof}
 \end{center}
 
-Thus to conclude, the order could be simplified as APVW, or
+Thus to conclude, the order could be simplified as APIVW, or
 
 \begin{center}
-	Agent - Patient - Verb - Wanter
+	Agent - Patient - Indirect - Verb - Wanter
 \end{center}
 
 Note that while the order is very strict, all elements are actually mandatory, except for the verb.
+
+Adverbs modifying the verb can be introduced, generally between I and V, though they can occasionally be moved to earlier position if it brings meaningful emphasis and does not result in ambiguities with subclauses.
+
+Because the wanter being specified is actually uncommon, Flavan verb phrases are strongly \textbf{head-final}.
+
+\subsection{Noun phrases}
+
+By contrast, noun phrases (i.e. phrases that occupy the roles of either A, P, I or W) are strongly \textbf{head-initial}. The head noun or pronoun comes first, declensed for number and case. It is then followed by adjectives or adjective phrases. In particular the adjective can include participles, which come with their own still strictly APIVW subclause, with V occupied by the participle and either A/P/I embodied by the head noun; this will be clarified in section \ref{verbs} and section \ref{relative}.
 
 \subsection{No antipassive voice}
 
@@ -536,7 +624,7 @@ The verb \textbf{ak}, meaning \emph{to be} in the sense of copula (i.e. ``the sk
 	Shlem.ERG woman.ABS was\\
 	\Flav{shlem katarotta attk}
 \end{center}
-	\item It always disappear in the present indicative, an example of \textbf{zero copula}. So \emph{Shlem is a woman} is literally \textbf{Shlem katarotta}. It readily reappears when conjugating the verb in any way, for example in the interrogative mood: \textbf{Shlem katarotta yk?} - \emph{is Shlem a woman?}. Thus, the specific word \textbf{ak} does not actually exist in Flavan.
+	\item It always disappears in the present indicative, an example of \textbf{zero copula}. So \emph{Shlem is a woman} is literally \textbf{Shlem katarotta}. It readily reappears when conjugating the verb in any way, for example in the interrogative mood: \textbf{Shlem katarotta yk?} - \emph{is Shlem a woman?}. Thus, the specific word \textbf{ak} does not actually exist in Flavan.
 \end{itemize}
 
 \pagebreak
@@ -545,7 +633,11 @@ The verb \textbf{ak}, meaning \emph{to be} in the sense of copula (i.e. ``the sk
 
 \begin{multicols}{2}
 
-Nouns are declensed according to number and case. Three main numbers are always present: \textbf{singular}, \textbf{dual} and \textbf{plural}. 
+Nouns are declensed according to number and case. 
+
+\subsection{Number and countability}
+
+Three main numbers are always present: \textbf{singular}, \textbf{dual} and \textbf{plural}. These take on different meanings for the two classes of countable and uncountable nouns. \cmmnt{countability}
 
 
 \subsection{Ergative}
@@ -648,7 +740,9 @@ The noun \textbf{berb} \ipa{bErb}, \emph{arm} is declensed as follows:
     \end{tabular}
 \end{center}
 
+\subsection{Definiteness}
 
+Flavan avoids marking for definiteness unless necessary. For singular and dual countable, indefiniteness is signaled by the adjectives \textbf{e} and \textbf{ka}, the literal cardinals \emph{one} and \emph{two}, placed after the noun just like normal adjectives. \cmmnt{finire}
 
 
 
@@ -697,6 +791,52 @@ The possible comparison verbs are
 \pagebreak
 
 
+
+\section{Pronouns}
+
+\subsection{Personal Pronouns}
+
+\begin{center}
+    \begin{tabular}{c || c | c | c | c | c | c}
+                        & ERG   & ABS   & GEN   & DAT   & ABL       & VOC \\ \hline
+    1st singular        & ngon  & ngan  & nget       & ong   & ngangon   & - \\
+    2nd                 & my    & me    & met        & omy   & mame      & my-na(s) / my-nana (d/p)\\
+    3rd singular        & nor   & nar   & net       & onorg & nanyr  & -       \\
+   1st plural inclusive & sho   & sha   & shet        & osh   & shasho  & sho-nana          \\
+   1st plural exclusive & nysh  & nosh  & neshet        & onysh & nanysh  & -          \\
+   3rd dual/plural      & ney   & nay   & neyt        & one   & naney   & -
+    \end{tabular}
+\end{center}
+
+Personal pronouns can be supplemented with \textbf{specifier particles}, if and only if it is strictly necessary for disambiguation; the particles clarify facts about the person (i.e. gender, number, animacy\ldots). Generally only one specifier particle is allowed, and it is placed \emph{after} the pronoun.
+
+\begin{center}
+    \begin{tabular}[]{c | c}
+        Particle & Meaning\\
+        \hline
+        ky & male\\
+        fa & female\\
+        sy & animated\\
+        da & inanimated\\
+        foba & older\\
+        fen & younger\\
+        yk & close to the listener / reflexive\\
+        badd & far from the listener\\
+        \hline
+        my & 2nd p singular\\
+        ek & 2nd p dual\\
+        tta & 2nd p plural
+
+    \end{tabular}
+\end{center}
+
+So, \textbf{nar yk} might mean ``this one here, as opposed to that other one far away'', or \textbf{nysh fa} might mean ``us women, excluding all men'' when talking to another man. The particles \textbf{my}, \textbf{ek}, \textbf{tta} are only to be used for the 2nd person pronouns when it is necessary to specify the number. So \textbf{my my} is ``you, and emphatically you alone'', or \textbf{my ek} is ``you two''.
+
+\textbf{yk} has a second meaning: it makes the pronoun reflexive, if it's in a non-ergative case. For example: \textbf{nor ky nar yk rbodattk} \ipa{nOr k1 nar 1k rbo"dat:k}, \emph{he (male) killed himself}.
+
+\cmmnt{Demonstrative, indefinite, interrogative}
+
+\pagebreak
 
 \section{Verbs}\label{verbs}
 
@@ -803,11 +943,11 @@ The possible comparison verbs are
 
 
 
-\section{Relative Clauses}
+\section{Relative Clauses}\label{relative}
 
 Flavan doesn't use relative pronouns to form relative clauses in the traditional sense, for relative clauses in the in the position of subject, object, intransitive subject \emph{and} indirect object. Instead, it employs directly its extensive participle/gerund system (for bound/free relative clauses respectively).
 
-As any adjective, the participle goes after the noun it refers to, and the rest of the relative clause is in standard word order with respect to the participle, which is the main verb from the subclause's point of view. Moreover, relative clauses are Flavan relative tense's time to shine: the participle's tense denotes time \emph{relative} to the time of the main clause (which is in turn relative to background time).
+As any adjective, the participle goes after the noun it refers to, and the rest of the relative clause is in standard word order with respect to the participle, which is the main verb from the subclause's point of view. Moreover, relative clauses are Flavan relative tense's time to shine: the participle's tense denotes time \emph{relative} to that of the main clause (which is in turn relative to background time).
 
 Examples for each position (with the subclause in square brackets for clarity):
 
@@ -817,29 +957,96 @@ Examples for each position (with the subclause in square brackets for clarity):
     \textbf{ERGATIVE}\\*
     ``I saw a man that was eating (transitive)''\\
     \textbf{Ngon toreb [rorbam] moratt}
-    \ipa{N\~On 'tOreb ro'rbam mo'rat:}\\
+    \ipa{N\~On "tOreb ro"rbam mo"rat:}\\
     me.ERG man.ABS (eat.IND.PRES).(AG PART) see.IND.ANT\\
     \vspace{1em}
     \textbf{ABSOLUTIVE}\\*
     ``I saw a man that was running''\\
     \textbf{Ngon toreb [depapat] moratt}
-    \ipa{N\~On 'tOreb depa'pat mo'rat:}\\
+    \ipa{N\~On "tOreb depa"pat mo"rat:}\\
     me.ERG man.ABS (eat.IND.PRES).(PAT PART) see.IND.ANT\\
 
     \vspace{1em}
     \textbf{DATIVE}\\*
     ``I saw the man that you gave the book to''\\
     \textbf{Ngon toreb [my kagmenyr dokatt] moratt}
-    \ipa{N\~On 'tOreb depa'pat mo'rat:}\\
+    \ipa{N\~On "tOreb depa"pat mo"rat:}\\
     me.ERG man.ABS you.ERG book.ABS (give.IND.PRES).(DAT PART) see.IND.ANT\\
 
     (note: \textbf{dokatt} is in the anterior tense since the giving of the book was certainly anterior to the main action.)
 
 \end{center}
 
+A delicate point is word order. The head noun \textbf{toreb} in all of this cases occupies two roles simultaneously: P in the main clause and A/P/I in the subclause. Since the rest of the subclause must come after the head noun, if the participle is of patient or indirect type then it's possible the APIVW order will be broken for the subclause. This is considered one of the few acceptable exceptions. Thus in the last example above the subclause is really in IAPV because the I just cannot be moved forward.
+
 \cmmnt{add other positions}
 
 \pagebreak
+
+\section{Numerals}
+
+Flavan arithmetic terminology has undergone a remarkable number of revisions, most of them artificial, following the strong push for clarity, ease of calculation and mutual intelligibility imposed by the needs of a civilization based on trading and travel. The current situation is a positional base-16 / base-4 system, with the spoken language mostly working in the former while written numerals (described in the reference for the script) employ the latter.
+
+The first cardinal numerals are
+
+\begin{center}
+    \begin{tabular}[]{c | c | c | c | c}
+        base-10 & base-16 & numeral & pronunc. & etim./alternative mean.\\
+        \hline
+        0 & 0& kydh  & \ipa{k1jD:} & nothing\\
+        1 & 1& e     & \ipa{E} & - \\
+        2 & 2& ka    & \ipa{ka} & original dual affix\\
+        3 & 3& pok   & \ipa{pOk} & triangle\\
+        4 & 4& demo  & \ipa{"dEmo} & square\\
+        5 & 5& fam   & \ipa{fam} & hand\\
+        6 & 6& eka   & \ipa{e"ka} & - \\
+        7 & 7& rbargar &\ipa{rba"rgar} & hole\footnotemark\\
+        8 & 8& mom  & \ipa{mOm} & sun\footnotemark\\
+        9 & 9& dhlarma & \ipa{Dlarma} & ``not quite ten'' (sort of)\\
+        10& A& darma & \ipa{darma} & - \\
+        11& B& kodany & \ipa{ko"dani} & from the old system\\
+        12& C& kardeny & \ipa{kar"dEni} & from the old system\\
+        13& D& pottke  & \ipa{"pOt:ke} & from quaternary ``three one''\\
+        14& E& kargar & \ipa{ka"rgar} & two-seven\\
+        15& F& dhlarda & \ipa{Dla"rda} & ``not quite sixteen'' (sort of)\\
+        16&10& garda & \ipa{ga"rda} & [unknown] 
+    \end{tabular}
+\end{center}
+
+\footnotetext{The etimology of \textbf{rbargar} is worthy of explanation: it refers to the seven orifices of the human body according to Flavans: the two ears, the two nostrils, the mouth, the urethra/vagina, and the anus.}
+
+\footnotetext{It's not known whether this is a coincidence or has some philosophical or religious significance. It is known that the attention to eight as a sacred number of sorts has definitely shifted in later times towards sixteen, and this term is likely to have been inherited from a much older system.}
+
+To which we can add the powers of sixteen:
+
+\begin{center}
+    \begin{tabular}[]{c | c | c | c | c}
+        base-10 & pow of 16 & numeral & pronunc. & etim./alternative mean.\\
+        \hline
+        16 & $16^1$ & garda  & \ipa{ga"rda} & [unknown] \\
+        256 & $16^2$ & dhonga & \ipa{Do"Na} & many \\
+        4096 & $16^3$ & kottla & \ipa{"kOt:la} & complete \\
+        65536 & $16^4$ & gardakottla & \ipa{gardaDo"Na} & $16 \times 16^3$ \\
+        1048576 & $16^5$ & dhongakottla & \ipa{DoNa"kOt:la} & $16^2 \times 16^3$\\
+        \multicolumn{5}{l}{\ldots}
+    \end{tabular}
+\end{center}
+
+Arbitrary number can be expressed in the following way. Write the number in base-16, so as a sum of powers of 16, and sort the powers from \textbf{smallest to largest}. For example, let's take $12345_{10} = 3039_{16}$, so
+
+\[ 3039_{16} = 9 \times 16^0 + 3 \times 16 + 0 \times 16^2 + 3 \times 16^3 \]  
+
+Then reading literally, the word representing the number is
+
+\begin{center}
+    \textbf{dhlarma-pok-garda-pok-kottla}\\
+    \emph{nine (plus) three-sixteen (plus) three-4096}
+\end{center}
+
+This insistence of Flavans on reading from least significant to most significant digit is frustrating and contrasts with their most-significant-first written representation.
+
+\pagebreak
+
 \section{Dictionary}
 
 Flavan script transcription is rotated to horizontal for formatting purposes.

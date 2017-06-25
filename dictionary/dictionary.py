@@ -88,7 +88,14 @@ for word in alphabetical:
     if part_of_speech:
         tex += part_of_speech + ", "
 
-    tex += r"\emph{"+translation+r"}"
+    if not isinstance(translation, basestring):
+        translation_text = ""
+        for i in range(len(translation)):
+            translation_text += "%d. "%(i+1) + r"\emph{"+translation[i]+ r"} "
+    else:
+        translation_text = r"\emph{"+translation+r"}"
+
+    tex += translation_text 
 
     tex += r"\\ \vspace{7pt}"
 
