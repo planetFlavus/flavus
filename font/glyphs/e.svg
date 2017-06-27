@@ -5,11 +5,44 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="512"
    height="512"
    viewBox="0 0 135.46666 135.46667"
    version="1.1"
-   id="svg8">
+   id="svg8"
+   sodipodi:docname="e.svg"
+   inkscape:version="0.92.1 r15371">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1892"
+     inkscape:window-height="1023"
+     id="namedview4495"
+     showgrid="true"
+     inkscape:snap-bbox="false"
+     inkscape:object-paths="true"
+     inkscape:zoom="1.3037281"
+     inkscape:cx="202.69034"
+     inkscape:cy="315.53877"
+     inkscape:window-x="12"
+     inkscape:window-y="41"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8">
+    <inkscape:grid
+       type="xygrid"
+       id="grid5040"
+       spacingx="2.1166666"
+       spacingy="2.1166666"
+       empspacing="8" />
+  </sodipodi:namedview>
   <defs
      id="defs2" />
   <metadata
@@ -26,6 +59,7 @@
   </metadata>
   <path
      id="path4597"
-     d="M 21.166666,21.166669 6.3499999,6.3500023"
-     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.93333312;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+     d="M 10.583332,10.583336 -4.2333332,-4.2333306"
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.93333244;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
 </svg>

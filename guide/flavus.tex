@@ -75,6 +75,8 @@
 
 \renewcommand{\abcwidth}{\dimexpr.7\linewidth\relax}
 
+\newcommand{\fsr}{FSR}
+
 \title{Flavus}
 
 \begin{document}
@@ -509,7 +511,7 @@ To give a rough idea of how the different dialects sound, here are a few words w
 \begin{tabular}[]{c | c | c | c}
     Romanization & Central Demorog & Bymarog & Far Demorog \\
     \hline
-    \textbf{gydda} & \apa{g1j"d:a} & \apa{gu"d:a} & \apa{gi"da} \\
+    \textbf{gydda} & \apa{g1j"d:a} & \apa{gu"d:a} & \apa{gi"d:a} \\
     \textbf{mydhlark} & \apa{mj1D:'lark} & \apa{muz"lalk} & \apa{miT"rark} \\
     \textbf{kagmenyr} & \apa{kag"mEn\s{r}} & \apa{kag"minul} & \apa{kag"mEn\s{r}}
 \end{tabular}
@@ -561,7 +563,7 @@ The following diagrams present the Flavan abstract vowel inventory and the range
 
     \begin{center} \textbf{Far Demorog}\end{center}
 \begin{vowel}
-    \putcvowel{\color{red}a}{4}
+    \putcvowel{\color{red}\textipa{A}}{5}
     \putcvowel{\color{YellowOrange}\textipa{E}}{3}
     \putcvowel{\color{OliveGreen}i}{1}
     \putcvowel{\color{blue}\textipa{u}}{8}
@@ -983,6 +985,18 @@ Some verbs, those starting on \textbf{ak-} (except \textbf{ak} itself) construct
     rkygo & newborn & Patient & akarkygat & be born\\
    
 \end{tabular}
+
+\subsection{Modifiers}
+
+There is another interesting phenomenon in verbs, on the edge between fusion and agglutination: modifier prefixes. These do attach to the original root to produce a new, longer root with modified meaning; therefore they must be applied before conjugation. Modifiers act somewhat irregularly in terms of the resulting change in meaning, and many modified verbs become their own new lexical units and are reported separately in our dictionary; nevertheless Flavan generously applies modifiers on new verbs in speech to create predictable transformations. The usage and parsing of modifiers requires a good dose of common sense, and Flavan speakers tend to avoid them whenever the possibility for ambiguity arises and a different verb already exists to communicate the intended modified meaning.
+
+A few popular modifiers:
+
+\begin{tabular}[]{c | c | c | c}
+    dhla- & inversion & the action opposite, inverse, or undoing the original action.& \textbf{pottarat}, \emph{sew, entangle}, \textbf{dhlapottarat}, \emph{unsew, disassemble, disentangle} \\
+    kyta- & negation & the original action not happening, being stopped or ignored.& \textbf{pat}, \emph{walk}, \textbf{kytapat}, \emph{not walk, stand still, wait still}\\
+    \fsr & strengthening & a strengthened, more intense or faster version of the original action.& \textbf{pat}, \emph{walk}, \textbf{papat}, \emph{run}\\
+\end{tabular}
 		
 	\subsection{Perfectiveness}
 
@@ -1029,9 +1043,29 @@ Examples for each position (with the subclause in square brackets for clarity):
 
 \end{center}
 
-A delicate point is word order. The head noun \textbf{toreb} in all of this cases occupies two roles simultaneously: P in the main clause and A/P/I in the subclause. Since the rest of the subclause must come after the head noun, if the participle is of patient or indirect type then it's possible the APIVW order will be broken for the subclause. This is considered one of the few acceptable exceptions. Thus in the last example above the subclause is really in IAPV because the I just cannot be moved forward.
+A delicate point is word order. The head noun \textbf{toreb} in all of these cases occupies two roles simultaneously: P in the main clause and A/P/I in the subclause. Since the rest of the subclause must come after the head noun, if the participle is of patient or indirect type then it's possible the APIVW order will be broken for the subclause. This is considered one of the few acceptable exceptions. Thus in the last example above the subclause is really in IAPV because the I just cannot be moved forward.
 
 \cmmnt{add other positions}
+
+\subsection{??}
+
+It might be that the rigid order in the above construction of relative clauses is too strict for the expression some concepts; for example, situations in which it is important that the main clause is finished before one can start a relative subclause. In that case it is possible to postpone the relative clause with the \textbf{kon} construction, described as follows.
+
+\section{Declarative clauses}
+
+Declarative subclauses are built by means of a \textbf{declarative pronoun}, standing for the subclause in the main clause, while the subclause itself is constructed as a normal declarative clause - with the exception that an irrealis subclause should take the subjunctive mood. The pronoun (and its position with respect to the subclause) is declensed as follows:
+
+\begin{tabular}[]{c | c | c }
+    & pronoun & position\\
+    \hline
+  ERG & bogm & after \\
+  ABS & bag & before\\
+  DAT & obogm & before \\
+  ABL & babogm & before
+\end{tabular}
+
+
+
 
 \pagebreak
 
@@ -1051,7 +1085,7 @@ The first cardinal numerals are
         3 & 3& pok   & \ipa{pOk} & triangle\\
         4 & 4& demo  & \ipa{"dEmo} & square\\
         5 & 5& fam   & \ipa{fam} & hand\\
-        6 & 6& eka   & \ipa{e"ka} & - \\
+        6 & 6& eka   & \ipa{e"ka} & ``one-two'' in base four \\
         7 & 7& rbargar &\ipa{rba"rgar} & hole\footnotemark\\
         8 & 8& mom  & \ipa{mOm} & sun\footnotemark\\
         9 & 9& dhlarma & \ipa{Dlarma} & ``not quite ten'' (sort of)\\
@@ -1092,12 +1126,37 @@ Then reading literally, the word representing the number is
 
 \begin{center}
     \textbf{dhlarma-pok-garda-pok-kottla}\\
+    \ipa{Dlarma"pOk ga"rda pOk@"kOt:la}\\
     \emph{nine (plus) three-sixteen (plus) three-4096}
 \end{center}
 
 This insistence of Flavans on reading from least significant to most significant digit is certainly frustrating especially in light of their most-significant-first written representation of numbers.
 
 \pagebreak
+
+\section{Possession}
+
+In Flavan, there is no verb ``to have'': possession is described entirely through the genitive.
+
+There is a distinction between \textbf{alienable} and \textbf{inalienable} possession. Alienable possessors are placed \emph{before} the head noun:
+
+\textbf{Shlemet tatyr kakoryb} \ipa{"SlEmet "tat\s{r} ka"kOr1jb}
+
+Shlem.GEN dagger.ERG (very).expensive (omitted copula) - \emph{Shlem's dagger is very expensive}
+
+While an inalienable relationship uses the opposite order:
+
+\textbf{forb Shlemet ttlyttla} \ipa{fOrb "SlEmet @t:l1jt:la}
+
+Brother.ERG Shlem.GEN (very).beautiful (omitted copula) - \emph{Shlem's brother is very beautiful}
+
+There is an exception in genitive expressing geographical or cultural origin, such as the origin village in Flavan names. If Shlem comes from the Karek village, she is \textbf{Karek-t Shlem}, even if the possession is inalienable.
+
+
+
+\section{Kinship and Relationship}
+
+
 
 \section{Dictionary}
 

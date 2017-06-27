@@ -14,7 +14,10 @@
   </metadata>
   <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.93333312;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" d="M 135.46666,-67.73333 0,67.733332 152.4,220.13333" id="path5824" inkscape:connector-curvature="0"/>
   <path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.93333312;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" d="M 67.733332,2.5999998e-6 135.46666,67.733332 67.733332,135.46666" id="path5826" inkscape:connector-curvature="0"/>
-<svg:defs id="defs2"/>
+<sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" objecttolerance="10" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1892" inkscape:window-height="1023" id="namedview4495" showgrid="true" inkscape:snap-bbox="false" inkscape:object-paths="true" inkscape:zoom="1.3037281" inkscape:cx="202.69034" inkscape:cy="315.53877" inkscape:window-x="12" inkscape:window-y="41" inkscape:window-maximized="0" inkscape:current-layer="svg8">
+    <inkscape:grid type="xygrid" id="grid5040" spacingx="2.1166666" spacingy="2.1166666" empspacing="8"/>
+  </sodipodi:namedview>
+  <svg:defs id="defs2"/>
   <svg:metadata id="metadata5">
     <rdf:RDF>
       <cc:Work rdf:about="">
@@ -24,5 +27,6 @@
       </cc:Work>
     </rdf:RDF>
   </svg:metadata>
-  <svg:path id="path4597" d="M 21.166666,21.166669 6.3499999,6.3500023" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.93333312;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"/>
+  <svg:path id="path4597" d="M 10.583332,10.583336 -4.2333332,-4.2333306" style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.93333244;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" inkscape:connector-curvature="0"/>
+  <svg:path style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.93333312;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" d="M 0,67.733332 67.733332,2.5999998e-6" id="path5042" inkscape:connector-curvature="0"/>
 </svg>

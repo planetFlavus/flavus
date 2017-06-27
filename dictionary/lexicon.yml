@@ -524,3 +524,19 @@ rog:
 rkygo:
     tr: newborn
     part: n
+
+tatyr:
+    tr: 
+        - knife, dagger
+        - (vulgar) penis
+    part: n
+
+koryb:
+    tr:
+        expensive
+    part: adj
+
+forb:
+    tr:
+        brother
+    part: n
