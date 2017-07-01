@@ -14,8 +14,14 @@ font.addLookup('liga', 'gsub_ligature', (), (('liga', (('latn', ('dflt')), )), )
 font.addLookupSubtable('liga', 'liga')
 
 extra = [u" ",u"-",u"h"]
-consonants = [u"m",u"n",u"k",u"t",u"d",u"g",u"r",u"ng",u"s",u"l",u"shl",u"dh",u"dhl",u"p",u"b",u"rd",u"rb",u"f",u"sh",u"tt",u"dd",u"rk",u"ttl",u"dd",u"ttk"]
+consonants = [u"m",u"n",u"k",u"t",u"d",u"g",u"r",u"ng",u"s",u"l",u"shl",u"dh",u"dhl",u"p",u"b",u"rd",u"rb",u"f",u"sh",u"tt",u"dd",u"rk",u"ttl",u"dd",u"ttk",u"rg",u"gm",u"pd"]
 vowels = [u"e",u"y",u"o"]
+
+glyph_sizes = {
+        u"gm" : 1.5,
+        u"ttg" : 1.3,
+        u"k": 0.8
+        }
 
 # combine vowel diacs
 if True:
@@ -41,8 +47,13 @@ glyphs[u"a"] = u"-"
 for c in consonants:
     glyphs[c] = c
     glyphs[c+u"a"] = c
+    if c in glyph_sizes:
+        glyph_sizes[c+u"a"] = glyph_sizes[c]
     for v in vowels:
         glyphs[c+v] = c+v
+        if c in glyph_sizes:
+            glyph_sizes[c+v] = glyph_sizes[c]
+
 
 
 
@@ -75,6 +86,9 @@ for letter,filename in glyphs.iteritems():
             continue
 
     glyph.width = 1000
+
+    if letter in glyph_sizes:
+        glyph.width = int(1000*glyph_sizes[letter])
 
     # make the glyph rest on the baseline
     ymin = glyph.boundingBox()[1]

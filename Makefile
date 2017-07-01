@@ -41,3 +41,5 @@ once:
 	cd guide; latexmk $(LATEXMKOPT) flavus
 
 .PHONY: clean force once all
+
+.PRECIOUS: $(MAIN).pdf

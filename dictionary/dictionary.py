@@ -101,6 +101,12 @@ for word in alphabetical:
         translation_text = r""+translation+r""
 
     tex += translation_text 
+
+
+    if "note" in  data[word]:
+        tex += r" | " + data[word]["note"]
+
+
     tex += r"\\"
 
 #    tex += r"\\ \vspace{7pt}"

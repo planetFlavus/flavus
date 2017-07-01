@@ -532,11 +532,53 @@ tatyr:
     part: n
 
 koryb:
-    tr:
-        expensive
+    tr: expensive
     part: adj
 
 forb:
-    tr:
-        brother
+    tr: brother
+    part: n
+
+sedh:
+    tr: fear
+    part: n
+
+anyshl:
+    tr: in the far future
+    part: adv
+
+shoryk:
+    tr: idea, proposition, suggestion (on how to act)
+    part: n
+
+ngyb:
+    tr: son (of mother)
+    part: n
+
+mardat:
+    tr: dream
+    part: v intr
+    note: "X.ABS Y.ABL (mardat): X dreams Y or of Y"
+
+kag:
+    tr: milk
+    part: n
+
+rbo:
+    tr: breast
+    part: n
+
+koreny:
+    tr: psychological or mental unbalance, mental illness
+    part: n
+    note: plural
+
+mom:
+    tr: sun
+    part: n
+
+rbargar:
+    tr: 
+        - hole
+        - orifice
     part: n
