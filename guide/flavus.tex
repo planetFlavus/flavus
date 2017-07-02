@@ -77,9 +77,13 @@
 
 \newcommand{\fsr}{FSR}
 
+\newcommand{\nf}[1]{{\normalfont #1}}
+
 \title{Flavus}
 
 \begin{document}
+
+\begin{comment}
 
 \maketitle
 
@@ -340,6 +344,9 @@ In this interesting example, the refrain is doubly deceiving as it also sets up 
 
 \section{Psychedelics}
 
+
+\end{comment}
+
 \chapter{The Flavan Language}
 {\Large Reference Grammar and Lexicon}
 
@@ -376,12 +383,12 @@ The phonetic inventory of Flavan is most conveniently presented by means of thei
 
 \begin{adjustbox}{center}
 {\large
-\begin{tabu}{c c c c c }
+    \begin{tabu}{c >{\bfseries}c c c c }
 	\multicolumn{5}{c}{The ``Males'' (common consonant clusters)}\\
 	\rowfont{\small}
-	Glyph & Rom. & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
+    Glyph & \nf{Rom.} & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
 	\hline 
-\flav{-}	& None	& //\footnotemark		& \apa{}		& pode\\
+    \flav{-}	& \nf{None}	& //\footnotemark		& \apa{}		& pode\\
 	\flav{m}	& m	& \ipa{m}	& \apa{m}	& ma \\ 
 	\flav{p}	& p	& /p/		& \apa{p}		& pa\\
 	\flav{b}	& b	& /b/		& \apa{b}		& ba \\
@@ -392,7 +399,7 @@ The phonetic inventory of Flavan is most conveniently presented by means of thei
 	\flav{tt}	& tt	& \ipa{t:}	& \apa{t:}	& kotta\\
 	\flav{dd}	& dd	& \ipa{d:}	& \apa{d:}	& kodda\\
 	\flav{shl}	& shl	& /\textesh l/	& [\c{c}l]	& shla\\
-	\flav{k}	& k	& \ipa{k}	& \apa{P}	& ka\\
+    \flav{k}	& k	& \ipa{k} (or \apa{x})	& \apa{P}	& ka\\
 	\flav{g}	& g	& \ipa{g}	& \apa{g}	& garyn\\
 	\flav{dh}	& dh	& \ipa{D}	& \apa{z}	& dhe \\
 	\flav{dhl}	& dhl	& \ipa{Dl}	& \apa{zl}	& dhla \\
@@ -404,11 +411,11 @@ The phonetic inventory of Flavan is most conveniently presented by means of thei
 \flav{rk}	& rk	& \ipa{rk}	& \apa{rk}	&rka \\
 \flav{rb}	& rb	& \ipa{rb}	& \apa{rb}	&rba \\
 \end{tabu}
-\begin{tabu}{c c c c c}
+\begin{tabu}{c >{\bfseries}c c c c}
 
 	\multicolumn{5}{c}{The ``Females'' (rare consonant clusters)}\\
 	\rowfont{\small}
-	Glyph & Rom. & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
+    Glyph & \nf{Rom.} & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
 	\hline 
 	\flav{bl}	& bl	& \ipa{bl}	& \apa{bl}	& bla \\
 \flav{ttf}	& ttf	& \ipa{t:f}	& \apa{t:f}	& kottfa \\
@@ -424,7 +431,7 @@ The phonetic inventory of Flavan is most conveniently presented by means of thei
 		\hline\hline
 		\multicolumn{5}{c}{The ``Children'': Vowels}\\
 		\rowfont{\small}
-		Glyph & Rom. & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
+        Glyph & \nf{Rom.} & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
 		\hline 
 None		& a	& \ipa{a}	& \apa{a}	& atta\\
 \flav{e}	& e	& \ipa{e} (or \apa{E})	& \apa{e} (or \apa{i}) 	& etta\\
@@ -449,12 +456,12 @@ A flavan word is just an alternating sequence of consonant clusters and vowels (
 
 It is occasionally possible for two vowels to be consecutive (VV) as a consequence of affixing. In that case, if the vowels are different they form a diphthong.
 
-As a final note, it is possible for the cluster \apa{kt} to appear exclusively in word-final position. This is not understood by Flavans as a distinct ``letter'' as it arises from a vowel elision in some genitive suffixes. Notation for \apa{kt} is explained in the section for the script.
+As a final note, it is possible for the cluster \ipa{kt} (actually pronounced \apa{xt}) to appear exclusively in word-final position. This is not understood by Flavans as a distinct ``letter'' as it arises from a vowel elision in some genitive suffixes. Notation for \ipa{kt} is explained in the section for the script.
 
-\subsection{Pronunciation rules}
+\subsection{Pronunciation rules I}
 
 \begin{itemize}
-    \item \textbf{ytta assimilation:} when not before another vowel, \ipa{1r}, \ipa{1m}, \ipa{1n} become a syllabic consonant \apa{\s{r}}, \apa{\s{m}}, \apa{\s{n}}. Example: \textbf{yrk} \flav{yrk} \ipa{\s{r}k}, \emph{and},  \textbf{kym} \ipa{k\s{m}}, \emph{while}. Some speaker also assimilate \ipa{1N} \textrightarrow \apa{\s{N}}, but this is fairly rare.
+    \item \textbf{ytta assimilation:} when not before another vowel, \ipa{1r}, \ipa{1m}, \ipa{1n} become a syllabic consonant \apa{\s{r}}, \apa{\s{m}}, \apa{\s{n}}. Example: \textbf{yrk} \flav{yrk} \ipa{\s{r}k}, \emph{and},  \textbf{kym} \ipa{k\s{m}}, \emph{while}. Some speaker also assimilate \ipa{1N} \textrightarrow \apa{\s{N}}, but this is fairly rare. Assimilation does not happen if the \textbf{y} is preceded by the same consonant that would become syllabic; e.g. \textbf{ryrga} \flav{ryrga} \ipa{"r1rga}, \cmmnt{meaning}, and not \ipa{"r\s{r}ga}.
     \item \textbf{mid opening:} \ipa{e} and \ipa{o} when stressed open up to \apa{E} and \apa{O} respectively. Example: \textbf{rgodha} \flav{rgodha} \ipa{"rgO.dh:a}, \emph{long}, and \textbf{egord} \ipa{"Egord}, \emph{examination}
     \item \textbf{syllabic l:} word-final \ipa{l} after a consonant becomes syllabic \apa{\s{l}} (this creates a new syllable). Example: \textbf{moshl} \flav{moshl} \ipa{"mO.S\s{l}}, \emph{mother}. (Some speakers do the same with word-final \ipa{gm} to make it \apa{g\s{m}}, others insert a schwa: \apa{gm@}).
     \item \textbf{nasalization:} a vowel following \ipa{N} will become nasal. Example: \textbf{ngon} \flav{ngon} \ipa{N\~on}, \emph{I (ergative)}
@@ -579,6 +586,29 @@ A couple other consonantal sound changes happened only in CDR depending on the s
     \item \textbf{palatalization:} \ipa{n}, \ipa{k} before \apa{e}, \apa{i} or \apa{j} become palatal \apa{\textltailn}, \apa{c}
 \end{itemize}
 
+
+\subsection{Consonantal inventory}
+\newcommand{\aph}[1]{\textcolor{blue}{#1}}
+
+The final array of consonantal sounds of CDR Flavan, including \aph{those only appearing as allophones}, is depicted here:
+
+\begin{center}
+
+\begin{tabular}[]{r *{10}{c}}
+            & Bilabial & Labiodental & Dental & Alveolar & Postalveolar & Palatal & Velar \\
+    Plosive & p b      &             & t d    &          &              & \aph{c} & k g\\
+    Nasal   & m        &             &        & n        &              & \aph{\textltailn} & \textipa{N} \\
+    Trill   &          &             &        &r\\
+    Flap    &          &             &        &\aph{\textipa{R}}\\
+    Fricative   &          & f \aph{v}          & \dh & s \aph{\textipa{z}} & \textipa{S} & & \aph{x} \\
+Approximant &          &             &        &          &              & \aph{j}     & \aph{\textturnmrleg} \\
+Lateral Appr.&          &           &         & \aph{l}\\
+\end{tabular}
+
+\end{center}
+
+In the end, the size of the inventory of distinct consonant phonemes is surprisingly modest, at \textbf{14} consonants.
+
 \subsection{Phonetic Romanization}
 
 The romanization scheme implicitly specified above has the advantage of mapping unambiguously with the Flavans' own orthography and only employs ASCII characters. A different choice is sometimes employed that reflects the actual pronunciation more directly, \textbf{phonetic romanization}. There is a one-to-one correspondence between letters and sounds:
@@ -586,26 +616,28 @@ The romanization scheme implicitly specified above has the advantage of mapping 
 \begin{center}{\Large
 \begin{tabular}[]{|*{30}{c|}}
     \hline
-    a & b & d & \=d & \dh & e & è & f & g & i & \`\i & \"\i & ȉ & j & k & l \\
+    a & b & d & \=d & \dh & e & è & f & g & i & \`\i & \"\i & ȉ & \j & k & x & l \\
 
-    \apa{a} & \apa{b} & \apa{d} & \apa{d:} & \apa{D} & \apa{e} & \apa{E:} & \apa{f} & \apa{g} & \apa{i} & \apa{i:} & \apa{1} & \apa{1:} & \apa{j} & \apa{k} & \apa{l} \\
+    \apa{a} & \apa{b} & \apa{d} & \apa{d:} & \apa{D} & \apa{e} & \apa{E:} & \apa{f} & \apa{g} & \apa{i} & \apa{i:} & \apa{1} & \apa{1:} & \apa{j} & \apa{k} & \apa{x} & \apa{l} \\
     
     \hline
     
-    \d{l} & m & \d{m} & n & \d{n} & \~n & o & ò & p & r & \d{r} & s & \v{s} & t & \=t & \textipa{W} \\
+    \d{l} & \d{\l} & m & \d{m} & n & \d{n} & \~n & o & ò & p & r & \d{r} & s & \v{s} & t & \=t & \textipa{W} \\
     
-    \apa{\s{n}} & \apa{\textltailn} & \apa{o} & \apa{O:} & \apa{p} & \apa{r/R} & \apa{\s{r}} & \apa{s} & \apa{S} & \apa{t} & \apa{t:} & \apa{W} & \apa{\s{l}} & \apa{\s{l}:} & \apa{m} & \apa{\s{m}} \\
+    \apa{\s{l}} & \apa{\s{l}:} & \apa{m} & \apa{\s{m}} & \apa{n}&  \apa{\s{n}} & \apa{\textltailn} & \apa{o} & \apa{O:} & \apa{p} & \apa{r/R} & \apa{\s{r}} & \apa{s} & \apa{S} & \apa{t} & \apa{t:} & \apa{W}  \\
     
     \hline
 
 \end{tabular}
 }\end{center}
 
+(The \textipa{:} symbol on vowels in this chart is a shorthand to mean that the vowel is stressed).
+
 The following is a short text in standard and phonetic romanization. The former is more useful in the study of grammar, while the latter is more suitable for pronunciation.
 
 \begin{verse}\textbf{sha osab dengonak rda mydhlark\\yrk sha rdan pottarat\\kym sha dhlapottarat}\end{verse}
 
-\begin{verse}\textbf{\v{s}a osàb de\~nonàk rda mjȉðlark\\\d{r}k \v{s}a rdan po\=taràt\\k\s{m} \v{s}a ðlapo\=taràt}\end{verse}
+\begin{verse}\textbf{\v{s}a osàb de\~nonàk rda m{\j}ȉðlark\\\d{r}k \v{s}a rdan po\=taràt\\k\d{m} \v{s}a ðlapo\=taràt}\end{verse}
 
 %\textbf{\v{s}lem ðlarg rbam \v{n}on nar rbap s\d{r}bà\=tam}
 
@@ -629,9 +661,11 @@ An example: \textbf{kottla} \flav{\hspace{-5pt}kottlaa} (the cardinal numeral 40
 
 \pagebreak
 
-\section{Word order and morphosyntactic alignment}\label{alignment}
+\section{General Syntax}\label{alignment}
 
 \begin{multicols}{2}
+
+    \subsection{Verb phrases and morphosyntactic alignment}
 
 Flavan could be briefly described as a SOV language, meaning sentences follow the order subject-object-verb. For example, \emph{Shlem eats a dhlorg} could be translated as
 
@@ -688,8 +722,33 @@ Adverbs modifying the verb can be introduced, generally between I and V, though 
 
 Because the wanter being specified is actually uncommon, Flavan verb phrases are strongly \textbf{head-final}.
 
-\section{Focus expulsion}
+\subsection{Focus expulsion}\label{focus}
 
+It is almost always possible in a spoken sentence to distinguish the \textbf{topic}, the information present for the purpose determining the context or specifying what object is being talked about, and the \textbf{focus}, the actual \emph{new} information the sentence communicates about the specified topic. As an example, the following English triplet
+
+\begin{center}
+    \emph{Shlem} eats the dhlorg\\
+    Shlem \emph{eats} the dhlorg\\
+    Shlem eats \emph{the dhlorg}
+\end{center}
+
+have three different choices for the focus. The first means ``it is Shlem, and not someone else, who ate the dhlorg'', the second ``Shlem ate the dhlorg instead of doing anything else with it'' and ``Shlem ate the dhlorg, not something else''. English marks the focus using prosodic stress (pitch, volume, and vowel length).
+
+Flavan (especially spoken) does \emph{not} necessarily employ prosodic stress to mark focus, but rather breaks the otherwise rigid word order and \textbf{expels} the focus at the end of the sentence. The above are translated as
+
+\begin{center}
+    \textbf{dhlarg rbam Shlem}\\
+    \textbf{Shlem dhlarg rbam}\\
+    \textbf{Shlem rbam dhlarg}
+\end{center}
+
+A series of points are in order:
+
+\begin{itemize}
+    \item Marking the verb as the focus is evidently a no-op on an agent-patient-verb phrase. This reflects the fact that the verb is already at least partially the focus by default. If it really needs to be marked (``I didn't \emph{kill} him!'') the adverb \textbf{meka} \ipa{"mEka}, \emph{even, actually} does the job.
+    \item Focus expulsion can get ambiguous if there isn't sufficient pause between neighbouring sentences (i.e. in written Flavan). In these higher-risk situation expulsion is performed by keeping a pronoun in the original position; e.g., the expulsion of \textbf{dhlorg} in the third example above would go \textbf{Shlem nar rbam dhlarg}.
+    \item In the presence of I or W, expulsion can get tricky. Verb expulsion does move the verb to \emph{after} W, so if both I and W are present they can get confused. Or an I expelled after a verb in deontic mood can be confused for a W. Generally context clears most ambiguities of this type, but if nothing works, focus can simply be left unmarked.
+\end{itemize}
 
 
 
@@ -713,10 +772,11 @@ Shlem.ERG woman.ABS was\\}{	\Flav{shlem katarotta attk}}{0.7}{0.3}
 
 2: It always disappears in the present indicative, an example of \textbf{zero copula}. So \emph{Shlem is a woman} is literally \textbf{Shlem katarotta}. It readily reappears when conjugating the verb in any way, for example in the interrogative mood: \textbf{Shlem katarotta yk?} - \emph{is Shlem a woman?}. Thus, the specific word \textbf{ak} does not actually exist in Flavan.
 
-\pagebreak
 
 
 \end{multicols}
+
+\pagebreak
 \section{Nouns}
 
 \begin{multicols}{2}
@@ -865,6 +925,9 @@ Flavan avoids marking for definiteness unless necessary. For singular and dual c
 
 Adjectives are incredibly simple in Flavan: they are not declensed nor do they align with the nouns they complement. Because of this adjective position is crucial for clarity; adjectives always come right after the noun they refer to.
 
+To be precise, the above construction describes the attributive use of adjectives in which they specify a quality about a noun. Adjectives can also be used \emph{predicatively}, as linked with a noun phrase with a copula: \emph{Shlem is beautiful}. In this case the adjective acts as an object of the \textbf{ak} copula, and is placed in the absolutive position, but not declensed. %The sentence is thus translated as \textbf{Shlem ttla (ak)}.
+
+
 \subsection{Intensity}
 
 The strength of adjectives can be modulated by a series of constructions.
@@ -902,17 +965,31 @@ The possible comparison verbs are
 
 
 
+
+
+\subsection{Nominal Adjectives}
+
+It is possible to use adjectives as nouns. (i.e. \textbf{ttla} can also mean \emph{the beautiful person}). 
+
+If the adjective is to be used in the ergative or absolutive position, one just uses the adjective itself in the expected position. It should \emph{not} be declensed as a noun in the absolutive case.
+
+If instead the adjective needs to be in any other position (dative, ablative, after a preposition\ldots) it should be prepended by a 3rd person pronoun (see section \ref{pronouns}).
+
+Therefore \emph{the beautiful person} is \textbf{ttla}, while \emph{to the beautiful person} is \textbf{onorg ttla}.
+
+
+
 \pagebreak
 
 
 
-\section{Pronouns}
+\section{Pronouns}\label{pronouns}
 
 \subsection{Personal Pronouns}
 
 \begin{center}
-    \begin{tabular}{c || c | c | c | c | c | c}
-                        & ERG   & ABS   & GEN   & DAT   & ABL       & VOC \\ \hline
+    \begin{tabular}{c || *{6}{>{\bfseries}c}}
+        & \nf{ERG}   & \nf{ABS}   & \nf{GEN}   & \nf{DAT}   & \nf{ABL}       & \nf{VOC} \\ \hline
     1st singular        & ngon*  & ngan  & nget       & ong   & ngangon   & - \\
     2nd                 & my*    & me    & met        & omy   & mame      & my-na(s) / my-nana (d/p)\\
     3rd singular        & nor   & nar   & net       & onorg & nanyr  & -       \\
@@ -927,7 +1004,7 @@ The possible comparison verbs are
 Personal pronouns can be supplemented with \textbf{specifier particles}, if and only if it is strictly necessary for disambiguation; the particles clarify facts about the person (i.e. gender, number, animacy\ldots). Generally only one specifier particle is allowed, and it is placed \emph{after} the pronoun.
 
 \begin{center}
-    \begin{tabular}[]{c | c}
+    \begin{tabular}[]{>{\bfseries}c | c}
         Particle & Meaning\\
         \hline
         ky & male\\
@@ -1216,8 +1293,14 @@ me.ERG ABS.[she beautiful (is)] know.IND.PRES\\
 
 \pagebreak
 
-\section{Conditionals}
+\section{Negation}
 
+A negation modifier for verbs has already been introduced, 
+
+\pagebreak
+
+\section{Conditionals}
+\cmmnt{cond}
 
 \pagebreak
 
