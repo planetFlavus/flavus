@@ -582,3 +582,31 @@ rbargar:
         - hole
         - orifice
     part: n
+
+ttakyrg:
+    tr: village authority
+    part: n
+
+dhana:
+    tr: after this, following, in a little while
+    part: adv
+
+forb:
+    tr: word
+    part: n
+
+om:
+    tr: all
+    part: adj
+
+nedhat:
+    tr: swim
+    part: v intr
+
+ngangat:
+    tr: be sick, have a fever
+    part: v intr
+
+ngynga:
+    tr: sickness, fever
+    part: n
