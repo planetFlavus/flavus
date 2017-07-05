@@ -5,18 +5,40 @@ import os,sys
 os.chdir(os.path.dirname(sys.argv[0]))
 
 def pronunciate(word):
+    vocalic_raw = r"a|e|o|1|y|\\s\{r\}|\\s{\l\}|\\s\{m}\}|\\s\{n\}|W|i"
+    vocalic = r"(" + vocalic_raw + r")"
+    vocalic_not = r"(?!" + vocalic_raw + r")"
+
+    groupI = r"(m|p|b|t|t:|d|d:|f|n|t)"
+    groupII = r"(k|g|r|s|S|\b|^)"
+    groupIII = r"(N)"
+
     subs = [
-            ("y","1"),
-            ("1r",r"\s{r}"),
-            ("ng","N"),
-            ("sh","S"),
-            ("tt","t:"),
-            ("dd","d:"),
-            ("dh","D"),
-            ("N([ae1yo])",r"N\~\1"),
-            ("l([^ae1yo])", r"\s{l}\1"),
-            (r"l\b",r"\s{l}"),
-            (r"D\b",r"D:")
+            ("y","1"),                  # base ytta
+            ("ng","N"),                 # ng
+            ("1([rmn])"+vocalic_not,r"\s{\1}"),     # syllabisation
+            ("sh","S"),                 # sh
+            ("tt","t:"),                # gem t
+            ("dd","d:"),                # gem d
+            ("dh","D"),                 # dh
+            ("N"+vocalic,r"N\~{\1}"),    # nasalization
+            ("l([^ae1yo])", r"\s{l}\1"), # ??????
+            (r"l\b",r"\s{l}"),          # final l syllabic
+            (r"D\b",r"D:"),              # final dh geminated
+
+            # ytta robordam
+            (groupI +   "1" + groupI, r"\1i\2"),
+            (groupII +  "1" + groupI, r"\1ij\2"),
+            (groupIII + "1" + groupI, r"\1Wj\2"),
+            (groupI + "1" + groupII, r"\1j1\2"),
+            (groupIII + "1" + groupIII, r"\1W\2"),
+            (groupI + "1" + groupIII, r"\1jW\2"),
+            (groupII + "1" + groupIII, r"\1jW\2"),
+            (groupIII + "1" + groupIII, r"\1W\2")
+
+            # flap
+#            (vocalic + "r" + vocalic,)
+
             ]
 
     word = word.lower()
@@ -62,9 +84,24 @@ def pronunciate(word):
 
 data = yaml.load(open("lexicon.yml"))
 
-#print data
 
 alphabetical = sorted(data)
+
+
+# fix phrase refs
+
+for phrase in alphabetical:
+    if "refs" in data[phrase]:
+        for word in data[phrase]["refs"]:
+            if word in data:
+                try:
+                    data[word]["phrases"].append(phrase)
+                except KeyError:
+                    data[word]["phrases"] = [phrase]
+
+
+
+#print data
 
 tex = ""
 
@@ -105,6 +142,13 @@ for word in alphabetical:
 
     if "note" in  data[word]:
         tex += r" | " + data[word]["note"]
+
+
+    if "lit" in data[word]:
+        tex += r" (lit. \emph{"+data[word]["lit"] + r"})"
+
+    if "phrases" in data[word]:
+        tex += r", see also \textbf{" + r"}, \textbf{".join(data[word]["phrases"])+r"}"
 
 
     tex += r"\\"

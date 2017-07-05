@@ -610,3 +610,10 @@ ngangat:
 ngynga:
     tr: sickness, fever
     part: n
+
+kashl kat:
+    tr: urinate
+    lit: give urine
+    refs:
+        - kashl
+        - kat
