@@ -153,6 +153,10 @@ korb:
     tr: child
     part: n
 
+korbaryn:
+    tr: pregnant
+    part: adj
+
 kym:
     tr: while, as
     part: conjunction
@@ -184,7 +188,7 @@ medh:
     part: adverb
 
 morad:
-    tr: ground, land
+    tr: ground, land, earth
     part: n
 
 mydhlark:
@@ -336,8 +340,25 @@ kagmenyr:
     part: n
 
 fysh:
-    tr: single hair
+    tr: hair
     part: n
+
+fysh bobet:
+    tr: head or facial hair
+    lit: hair of head
+    part: n
+    refs:
+        - fysh
+        - bob
+
+fysh dhyrgefet:
+    tr: eyelash
+    lit: hair of the two eyes
+    part: n
+    refs:
+        - fysh
+        - dhyrg
+
 
 
 bob:
@@ -445,6 +466,7 @@ nynga:
         - sticky
     part: adj
 
+
 nyngyr:
     tr: sweat
     part: n
@@ -479,6 +501,17 @@ megyn:
         - tent pole
         - (vulgar) finger
     part: n
+
+megyn dhyrget:
+    tr: eyebrow
+    part: n
+    lit: stick of the eye
+    refs:
+        - megyn
+        - dhyrg
+    note: dual is megynef dhyrgefet
+
+
 
 romak:
     tr:
@@ -715,5 +748,54 @@ aredh desgomenat:
         - aredh
         - desgomenat
 
+
+
+badharg:
+    tr: breathe
+    part: v intr
+
+dhorg:
+    tr: 
+        - breath, puff of breath
+        - wind
+    part: n
+
+adatta:
+    tr: smell, scent
+    part: n
+
+
+
+
+dargsodh:
+    tr: smoke
+    part: n
+
+sapedyk:
+    tr: dust
+    part: n
+
+
+
+kobo:
+    tr: chin, jaw
+    part: n
+
+namao:
+    tr: 
+        - face
+        - profile, side
+        - surface
+    part: n
+
+rboko:
+    tr:
+        - chest
+        - front, front face
+    part: n
+
+torenan:
+    tr: meat, flesh (human)
+    part: n
 
 

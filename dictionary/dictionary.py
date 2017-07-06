@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import yaml
 import re
 import os,sys
@@ -29,6 +32,7 @@ def pronunciate(word):
             ("l([^ae1yo])", r"\s{l}\1"), # ??????
             (r"l\b",r"\s{l}"),          # final l syllabic
             (r"D\b",r"D:"),              # final dh geminated
+            (vocalic + "D" + vocalic, r"\1D:\2"), # medial dh geminated
 
             # ytta robordam
             (groupI +   "1" + groupI, r"\1i\2"),
@@ -38,11 +42,21 @@ def pronunciate(word):
             (groupIII + "1" + groupIII, r"\1W\2"),
             (groupI + "1" + groupIII, r"\1jW\2"),
             (groupII + "1" + groupIII, r"\1jW\2"),
-            (groupIII + "1" + groupIII, r"\1W\2")
+            (groupIII + "1" + groupIII, r"\1W\2"),
 
             # flap
-#            (vocalic + "r" + vocalic,)
+            (vocalic + "r" + vocalic, r"\1R\2"),
 
+            # palatalization
+
+            (r"k(e|i|j)",r"c\1"),
+            (r"n(e|i|j)",r"ɲ\1")
+
+            ]
+
+
+    subs_final = [
+            ("ɲ",r"\\textltailn ")
             ]
 
     word = word.lower()
@@ -83,6 +97,10 @@ def pronunciate(word):
         word = re.sub("e","E",word)
         word = re.sub("o","O",word)
 
+    for key,value in subs_final:
+        word = re.sub(key,value,word)
+
+
     return word
 
 
@@ -90,6 +108,8 @@ data = yaml.load(open("lexicon.yml"))
 
 
 alphabetical = sorted(data)
+
+print "Total number of lemmas: %d"%len(alphabetical)
 
 
 # fix phrase refs
