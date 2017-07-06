@@ -5,6 +5,10 @@ import os,sys
 os.chdir(os.path.dirname(sys.argv[0]))
 
 def pronunciate(word):
+
+    if len(word.split()) > 1:
+        return " ".join( map(pronunciate, word.split()))
+
     vocalic_raw = r"a|e|o|1|y|\\s\{r\}|\\s{\l\}|\\s\{m}\}|\\s\{n\}|W|i"
     vocalic = r"(" + vocalic_raw + r")"
     vocalic_not = r"(?!" + vocalic_raw + r")"

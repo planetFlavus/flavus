@@ -2,7 +2,9 @@ yrk:
     tr: and
     part: conjunction
 boryg:
-    tr: acidic, yellow, sulfurous
+    tr: 
+        - acidic, sulfurous
+        - yellow, yellowish-white, beige, green-yellow, orange, red, dark red, brown, rose pink, skin colour
     part: adj
 
 adhla:
@@ -313,8 +315,8 @@ morat:
 
 nadd:
     tr: it seems like, it appears like
-    part: adverb
-    note: before a verb in subjunctive, expresses apparence
+    part: adv
+    note: "nadd V.SUBJ: it seems like V"
 
 byrmodak:
     tr: weigh (asses weight of something)
@@ -617,3 +619,101 @@ kashl kat:
     refs:
         - kashl
         - kat
+
+afys:
+    tr: physician, doctor, medic
+    part: n
+
+febla:
+    tr: white, light colours
+    part: adj
+
+gmyrta:
+    tr: black, dark colours
+    part: adj
+
+shlydda:
+    tr:
+        - necrotic, or relating to death
+        - blue, cyan, purple, bluish white or pearly/opalescent white, magenta
+    part: adj
+
+karana:
+    tr: green
+    part: adj
+
+komanytat:
+    tr: lose
+    part: v tr
+
+kopyr:
+    tr: bed
+    part: n
+    note: the dual can also mean double bed, in the sense of meant for two people to sleep in.
+
+mynsho:
+    tr: nightstand-like piece of furniture placed in bedrooms and used to hold personal effects and essential documents
+    part: n
+
+byreshl:
+    tr: 
+        - virgin
+        - unbroken, unopened (of container, eggs...)
+    part: adj
+
+ferkam:
+    tr: to share with
+    part: v tr
+    note: "X.ERG Y.ABS Z.ABL (ferkam): X shares Z with Y"
+
+batyr:
+    tr:
+        - arrive
+        - complete a motion
+        - to be over, finished
+    part: v intr
+
+
+otta:
+    tr: nose
+    part: n
+
+korba:
+    tr: big, large
+    part: adj
+
+otta korba:
+    tr: to be unlucky, to suffer excessively in life
+    lit: to have a big nose
+    refs:
+        - otta
+        - korba
+    note: "(otta korba) X.GEN: X is unlucky"
+
+dhlardan:
+    tr: alone
+    part: adv
+    etim: dhla + rdan
+
+kadhlarat:
+    tr: dance
+    part: v intr
+
+aredh:
+    tr: well, correctly, successfully
+    part: adv
+
+sgomenat:
+    tr: build
+    part: v tr
+
+aredh desgomenat:
+    tr: bottom-heavy, having a pear-shaped body
+    part: adj
+    lit: well built
+    refs:
+        - aredh
+        - desgomenat
+
+
+

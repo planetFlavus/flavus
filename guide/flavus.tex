@@ -55,16 +55,19 @@
 
 \usepackage{fontspec}
 %\fontspec{../font/flavangeometric.otf}
-\newfontfamily\flavan[Path = ../font/, Scale=0.5]{flavangeometric}
+\newfontfamily\flavan[Path = ../font/, Scale=0.6]{flavangeometric}
 
 \newcommand{\flav}[1]{  
-	\begin{turn}{-90}
+	%\begin{turn}{-90}
+    \rotatebox[origin=c]{270}{
 		\begin{varwidth}{10 cm}
 			{\centering \flavan  #1}
 		\end{varwidth}
-	\end{turn} }
+    }
+	%\end{turn} 
+    }
 
-    \newcommand{\fliv}[1]{{\flavan #1} }
+\newcommand{\fliv}[1]{{\flavan #1} }
 
 \newcommand{\Flav}[1]{{\Large \flav{#1}}}
 
@@ -81,12 +84,23 @@
 
 \newcommand{\nf}[1]{{\normalfont #1}}
 
-\title{Flavus}
+\title{Flavus\\\large Biology, Culture, Language}
+
+\renewcommand\thesection{}
 
 \begin{document}
 
 
 \maketitle
+
+\pagebreak
+
+\section{Introduction}
+
+The present \emph{booklet} is conceived to fill a serious and sizeable void in literature on \textbf{Flavus}, the \emph{Yellow Planet}, and its inhabitants. Until now, only xenobiological and xenoanthropological research material has been available, a presentation of information very little accessible to laymen with no technical knowledge, a demographic constituting an ever growing fraction of visitors to this odd, fascinating planet.
+
+
+\tableofcontents
 
 \chapter{The planet Flavus}
 
@@ -382,7 +396,7 @@ Music is played by traveling "bands" composed of a Drummer, a Lead vocalist, and
 A translated Demorog example:
 
 
-\poemtitle{It's empty like death}
+\textbf{It's empty like death}
 
 \begin{verse}
 \emph{(backing starts droning: ``it's empty like death'')}
@@ -553,7 +567,7 @@ As a final note, it is possible for the cluster \ipa{kt} (actually pronounced \a
     \item \textbf{ytta assimilation:} when not before another vowel, \ipa{1r}, \ipa{1m}, \ipa{1n} become a syllabic consonant \apa{\s{r}}, \apa{\s{m}}, \apa{\s{n}}. Example: \textbf{yrk} \flav{yrk} \ipa{\s{r}k}, \emph{and},  \textbf{kym} \ipa{k\s{m}}, \emph{while}. Some speaker also assimilate \ipa{1N} \textrightarrow \apa{\s{N}}, but this is fairly rare. Assimilation does not happen if the \textbf{y} is preceded by the same consonant that would become syllabic; e.g. \textbf{ryrga} \flav{ryrga} \ipa{"r1rga}, \cmmnt{meaning}, and not \ipa{"r\s{r}ga}.
     \item \textbf{mid opening:} \ipa{e} and \ipa{o} when stressed open up to \apa{E} and \apa{O} respectively. Example: \textbf{rgodha} \flav{rgodha} \ipa{"rgO.dh:a}, \emph{long}, and \textbf{egord} \ipa{"Egord}, \emph{examination}
     \item \textbf{syllabic l:} word-final \ipa{l} after a consonant becomes syllabic \apa{\s{l}} (this creates a new syllable). Example: \textbf{moshl} \flav{moshl} \ipa{"mO.S\s{l}}, \emph{mother}. (Some speakers do the same with word-final \ipa{gm} to make it \apa{g\s{m}}, others insert a schwa: \apa{gm@}).
-    \item \textbf{nasalization:} a vowel following \ipa{N} will become nasal. Example: \textbf{ngon} \flav{ngon} \ipa{N\~on}, \emph{I (ergative)}
+    \item \textbf{nasalization:} a vowel\footnote{Actually, the syllabics could in principle also nasalise, however two of them are already nasal and \apa{\s{l}} cannot appear after \apa{N}. The only remaining one is \apa{\s{r}}, which following \apa{N} becomes the nasal syllabic trill \apa{\~{\s{r}}}. This very rare sound only appears in a few words, including \textbf{nyngyr} \apa{"njW.N\~{\s{r}}}, \emph{sweat}. } following \ipa{N} will become nasal. Example: \textbf{ngon} \flav{ngon} \ipa{N\~on}, \emph{I (ergative)}
     \item word-final \ipa{D}, or \ipa{D} between two vowels becomes geminated: \apa{D:}. Example: \textbf{my agaredh} \flav{my\\aga"rEdh} \ipa{mj1aga'reD:} \emph{goodbye}
     \item \ipa{r} alone between two vowels with at least the first unstressed becomes a flap: \apa{R}. Example: \textbf{pottarat} \flav{pottarat} \ipa{pot:a'Rat}, \emph{sew}.
 \end{itemize}
@@ -711,16 +725,16 @@ The romanization scheme implicitly specified above has the advantage of mapping 
     
     \hline
     
-    \d{l} & \d{\l} & m & \d{m} & n & \d{n} & \~n & o & ò & p & r & \d{r} & s & \v{s} & t & \=t & \textipa{W} \\
+    \d{l}  & m & \d{m} & n & \d{n} & \~n & o & ò & p & r & \d{r} & \`{\d{r}} & s & \v{s} & t & \=t & \textipa{W} \\
     
-    \apa{\s{l}} & \apa{\s{l}:} & \apa{m} & \apa{\s{m}} & \apa{n}&  \apa{\s{n}} & \apa{\textltailn} & \apa{o} & \apa{O:} & \apa{p} & \apa{r/R} & \apa{\s{r}} & \apa{s} & \apa{S} & \apa{t} & \apa{t:} & \apa{W}  \\
+    \apa{\s{l}}  & \apa{m} & \apa{\s{m}} & \apa{n}&  \apa{\s{n}} & \apa{\textltailn} & \apa{o} & \apa{O:} & \apa{p} & \apa{r/R} & \apa{\s{r}} & \apa{\s{r}:} & \apa{s} & \apa{S} & \apa{t} & \apa{t:} & \apa{W}  \\
     
     \hline
 
 \end{tabular}
 }\end{center}
 
-(The \textipa{:} symbol on vowels in this chart is a shorthand to mean that the vowel is stressed).
+(The \textipa{:} symbol on vowels/syllabics in this chart is a shorthand to mean that the vowel/syllabic is stressed).
 
 The following is a short text in standard and phonetic romanization. The former is more useful in the study of grammar, while the latter is more suitable for pronunciation.
 
@@ -1010,6 +1024,69 @@ Flavan avoids marking for definiteness unless necessary. For singular and dual c
 
 
 \pagebreak
+
+\section{Functions and postpositions} \label{prepositions}
+
+The above cases alone only mark few of the many possible roles, or functions, a noun phrase can assume in a sentence. The remaining possibilities are marked by a case + postposition pair. The postposition is placed not only after the noun, but after the entire noun phrase; if the latter is too long they can be moved back to right after the noun.
+
+The following table lists all case + postposition combinations along with their meaning. ``\textbf{-}'' means the naked case with no postposition.
+
+\newcommand{\xline}{\cline{1-2}\cline{4-4}}
+
+\begin{center}
+    \begin{tabular}[]{ |  c | c | c | >{\bfseries}c | }
+%    \multicolumn{4}{c}{\textbf{Spatial}}\\
+    \hline
+Ergative & agent & ERG & -\\\hline \hline
+
+Absolutive & patient & \multirow{4}{*}{ABS} & - \\\xline
+Inessive   &  inside  & &esh      \\\xline
+Illative   &  motion into  & &gym\\ \xline
+Terminative&  end point of action & & dar\\ 
+\hline \hline
+Adessive   &  near  & \multirow{12}{*}{DAT} & \multirow{3}{*}{koba}      \\\cline{1-2}
+Apudessive &  next to  &                &\\ \cline{1-2}
+Pertingent &  touching  & &\\\xline
+Locative   &  at (location) & & \multirow{2}{*}{-} \\ \cline{1-2}
+Lative     &  motion to (location) & & \\ \cline{1-2}\cline{4-4}
+Allative   &  motion towards && bo\\ \xline
+Temporal & during &  & gmer\\\xline
+Comitative & in company of &  & \multirow{4}{*}{rdan}\\ \cline{1-2}
+Sociative & together with    & &  \\ \cline{1-2}
+Dative & recipient &  & \\ \cline{1-2}
+Ornative & endowment with & & \\\cline{1-2} \cline{4-4}
+Benefactive & for the benefit of & & atta\\ \hline\hline
+Intrative  &  between  & \multirow{14}{*}{ABL}  &gmer\\\xline
+Subessive  &  under  &&dhana\\\xline
+Superessive&  over  & & ena\\\xline
+Egressive  &  motion out of  & &foter\\\xline
+Ablative   &  motion away from  & & \multirow{4}{*}{-} \\\cline{1-2}
+Elative    &  out of, produced from & &\\ \cline{1-2}
+Initiative &  starting point of an action  & &\\ \cline{1-2}
+Instrumental & by means of, using & &   \\\xline
+Perlative & movement through &  & \multirow{2}{*}{gmer} \\\cline{1-2} 
+Prosecutive & movement along or across & &\\
+\xline
+%\multicolumn{4}{c}{\textbf{Temporal}}\\\hline
+Antessive & before & & ena\\\xline
+Postessive & after &  & dhana\\\xline
+%\multicolumn{4}{c}{\textbf{General Syntactical}}\\
+%\multicolumn{4}{c}{\textbf{Relation}}\\
+Causal & because of &  & foter\\
+
+\hline\hline
+Possessive & possession by & GEN & - \\
+\hline\hline
+Vocative & addressing directly & VOC & - \\
+\hline\hline
+\end{tabular} 
+\end{center}
+
+\cmmnt{finish table}
+
+If used with pronouns, some postposition can merge with pronomial specifiers (see section \ref{pronouns}); the mergers are listed in section \ref{mergers}.
+
+
 \section{Adjectives}
 
 Adjectives are incredibly simple in Flavan: they are not declensed nor do they align with the nouns they complement. Because of this adjective position is crucial for clarity; adjectives always come right after the noun they refer to.
@@ -1134,6 +1211,33 @@ plur & motty & matty & mottyt & omotty & mamaty\\
 \textbf{mat} is to be placed in the right case and position in the interrogative phrase, and this by itself is sufficient to mark it as a question. However, most speakers also add the interrogative mood to the verb (normally only used for yes/no questions) \emph{if} the verb would have normally taken the indicative - this will be clarified better in section \ref{interrogatives}.
 
 The interrogative pronoun, which is always necessarily the focus, can be subject to focus expulsion as explained in section \ref{focus}.
+
+\pagebreak
+
+\section{Specifier Particle + Postposition mergers}\label{mergers}
+
+Some pronoun specifier particles followed by some postposition can get merged into abbreviated forms.
+
+\begin{center}
+\begin{tabular}[]{c|*{20}{|c}|}
+    & ky & fa & sy & da & foba & fen & yk & badd & my   & ek & tta \\\hline\hline
+esh & kysh &  &    &    &      &     &    &      & mysh &    &     \\\hline
+gym &    &    &    &    &      &     &ygym&      &      &    &     \\\hline
+dar \\\hline
+koba\\\hline
+bo\\\hline
+gmer\\\hline
+rdan\\\hline
+atta\\\hline
+dhana\\\hline
+ena\\
+foter\\\hline
+\end{tabular}
+\end{center}
+
+Empty cells mean there is no merge.
+
+In addition, \textbf{my} as the pronoun also merges with postposition in the same way as \textbf{my} the specifier. So \textbf{mysh} means \emph{inside you} and so on.
 
 \pagebreak
 
@@ -1279,7 +1383,7 @@ A few popular modifiers:
 		
 Modifiers can be composed together, even repeating the same modifier: \emph{to run fast} could be translated as \textbf{papapat}, applying FSR twice.
 
-	\subsection{Perfectiveness}
+	\subsection{Aspect}
 
     \cmmnt{do perfectiveness}
 
@@ -1369,7 +1473,7 @@ Declarative subclauses are built by means of a \textbf{declarative pronoun}, sta
 
 Here are a couple of example of declarative subclauses in ergative and absolutive positions.
 
-\textbf{[nor fa ttla] bogm karygma} \ipa{nor"fat:la bOgm kar1"gma}\\
+\textbf{[nor fa ttla] bogm karygma} \ipa{nor"fat:la bOg\s{m} kar1"gma}\\
 {[she beautiful (is)].ERG fact.ABS (is)}\\
 \emph{It's a fact that she is beautiful}
 
@@ -1392,6 +1496,8 @@ A negation modifier for verbs has already been introduced,
 \cmmnt{cond}
 
 \pagebreak
+
+\section{Interrogatives}
 
 \section{Numerals}
 
@@ -1484,6 +1590,7 @@ There is an exception in genitive expressing geographical or cultural origin, su
 
 
 
+\pagebreak
 \section{Dictionary}
 
 Flavan script transcription is rotated to horizontal for formatting purposes.
