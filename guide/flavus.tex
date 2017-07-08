@@ -486,10 +486,10 @@ The phonetic inventory of Flavan is most conveniently presented by means of thei
 
 \begin{adjustbox}{center}
 {\large
-    \begin{tabu}{c >{\bfseries}c c c c }
+    \begin{tabu}{c >{\bfseries}c c c >{\bfseries}c }
 	\multicolumn{5}{c}{The ``Males'' (common consonant clusters)}\\
 	\rowfont{\small}
-    Glyph & \nf{Rom.} & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
+    Glyph & \nf{Rom.} & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & \nf{Name} \\
 	\hline 
     \flav{-}	& \nf{None}	& //\footnotemark		& \apa{}		& pode\\
 	\flav{m}	& m	& \ipa{m}	& \apa{m}	& ma \\ 
@@ -514,11 +514,11 @@ The phonetic inventory of Flavan is most conveniently presented by means of thei
 \flav{rk}	& rk	& \ipa{rk}	& \apa{rk}	&rka \\
 \flav{rb}	& rb	& \ipa{rb}	& \apa{rb}	&rba \\
 \end{tabu}
-\begin{tabu}{c >{\bfseries}c c c c}
+\begin{tabu}{c >{\bfseries}c c c >{\bfseries}c}
 
 	\multicolumn{5}{c}{The ``Females'' (rare consonant clusters)}\\
 	\rowfont{\small}
-    Glyph & \nf{Rom.} & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
+    Glyph & \nf{Rom.} & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & \nf{Name} \\
 	\hline 
 	\flav{bl}	& bl	& \ipa{bl}	& \apa{bl}	& bla \\
 \flav{ttf}	& ttf	& \ipa{t:f}	& \apa{t:f}	& kottfa \\
@@ -534,7 +534,7 @@ The phonetic inventory of Flavan is most conveniently presented by means of thei
 		\hline\hline
 		\multicolumn{5}{c}{The ``Children'': Vowels}\\
 		\rowfont{\small}
-        Glyph & \nf{Rom.} & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & Name \\
+        Glyph & \nf{Rom.} & \multicolumn{2}{c}{Pron. (Dem./Bym.)} & \nf{Name} \\
 		\hline 
 None		& a	& \ipa{a}	& \apa{a}	& atta\\
 \flav{e}	& e	& \ipa{e} (or \apa{E})	& \apa{e} (or \apa{i}) 	& etta\\
@@ -553,23 +553,50 @@ None		& a	& \ipa{a}	& \apa{a}	& atta\\
 
 \footnotetext{The \textbf{pode} (//) is not an actual phoneme, but simply a vowel carrier necessary to represent a vowel without a preceding cluster in the Flavan script.}
 
+A Flavan word has a fairly rigid structure. It must alternate consonantal (K) and vocalic (W) units, so for example W, KW, WK, KWK, KWKW are allowed words. A consonantal unit is strictly one of the aforementioned clusters, while W is either one or (less commonly) two vowels (whether this results one or two sillables depends on diphthongization, explained later). All consonant clusters can appear in any position.
 
+A few words are composed of a single consonant. These are \textbf{n} \apa{\s{n}}, \textbf{m} \apa{\s{m}}.
 
-A flavan word is just an alternating sequence of consonant clusters and vowels (with at least one vowel). So, if C is a cluster and V is a vowel, words can be V, CV, VC, CVC, VCV, CVCV, \emph{etc}. Any clusters can be at the beginning, middle or end of a word.
-
-It is occasionally possible for two vowels to be consecutive (VV) as a consequence of affixing. In that case, if the vowels are different they form a diphthong.
+%A flavan word is just an alternating sequence of consonant clusters and vowels (with at least one vowel). So, if C is a cluster and V is a vowel, words can be V, CV, VC, CVC, VCV, CVCV, \emph{etc}. Any clusters can be at the beginning, middle or end of a word.
+%
+%It is occasionally possible for two vowels to be consecutive (VV) as a consequence of affixing. In that case, if the vowels are different they form a diphthong.
 
 As a final note, it is possible for the cluster \ipa{kt} (actually pronounced \apa{xt}) to appear exclusively in word-final position. This is not understood by Flavans as a distinct ``letter'' as it arises from a vowel elision in some genitive suffixes. Notation for \ipa{kt} is explained in the section for the script.
 
 \subsection{Pronunciation rules I}
 
 \begin{itemize}
+    \item \textbf{hard shyk:} waord-initial \ipa{S} followed by a vowel is pronounced \apa{\t{tS}}. Example: \textbf{sho} \flav{sho} \apa{\t{tS}O}, \emph{we (inclusive ergative)}
     \item \textbf{ytta assimilation:} when not before another vowel, \ipa{1r}, \ipa{1m}, \ipa{1n} become a syllabic consonant \apa{\s{r}}, \apa{\s{m}}, \apa{\s{n}}. Example: \textbf{yrk} \flav{yrk} \ipa{\s{r}k}, \emph{and},  \textbf{kym} \ipa{k\s{m}}, \emph{while}. Some speaker also assimilate \ipa{1N} \textrightarrow \apa{\s{N}}, but this is fairly rare. Assimilation does not happen if the \textbf{y} is preceded by the same consonant that would become syllabic; e.g. \textbf{ryrga} \flav{ryrga} \ipa{"r1rga}, \cmmnt{meaning}, and not \ipa{"r\s{r}ga}.
     \item \textbf{mid opening:} \ipa{e} and \ipa{o} when stressed open up to \apa{E} and \apa{O} respectively. Example: \textbf{rgodha} \flav{rgodha} \ipa{"rgO.dh:a}, \emph{long}, and \textbf{egord} \ipa{"Egord}, \emph{examination}
     \item \textbf{syllabic l:} word-final \ipa{l} after a consonant becomes syllabic \apa{\s{l}} (this creates a new syllable). Example: \textbf{moshl} \flav{moshl} \ipa{"mO.S\s{l}}, \emph{mother}. (Some speakers do the same with word-final \ipa{gm} to make it \apa{g\s{m}}, others insert a schwa: \apa{gm@}).
     \item \textbf{nasalization:} a vowel\footnote{Actually, the syllabics could in principle also nasalise, however two of them are already nasal and \apa{\s{l}} cannot appear after \apa{N}. The only remaining one is \apa{\s{r}}, which following \apa{N} becomes the nasal syllabic trill \apa{\~{\s{r}}}. This very rare sound only appears in a few words, including \textbf{nyngyr} \apa{"njW.N\~{\s{r}}}, \emph{sweat}. } following \ipa{N} will become nasal. Example: \textbf{ngon} \flav{ngon} \ipa{N\~on}, \emph{I (ergative)}
     \item word-final \ipa{D}, or \ipa{D} between two vowels becomes geminated: \apa{D:}. Example: \textbf{my agaredh} \flav{my\\aga"rEdh} \ipa{mj1aga'reD:} \emph{goodbye}
     \item \ipa{r} alone between two vowels with at least the first unstressed becomes a flap: \apa{R}. Example: \textbf{pottarat} \flav{pottarat} \ipa{pot:a'Rat}, \emph{sew}.
+    \item \textbf{diphthongization:} some pairs of vowels when adjacent, even between different words, will be pronounced as a single sillable, either a diphthong or a vowel + semivowel pair. We will call both of these cases a ``diphthong'' employing a common misnomer. The diphthongs and their pronunciations are as follows:
+
+\bgroup
+\def\arraystretch{1.5}
+\begin{center}
+    \begin{tabular}[]{|>{\bfseries}c | c | c|}
+        \hline
+        {\normalfont Pair} & Unstressed & Stressed \\\hline \hline
+        ae & \apa{\t*{ae}} & \apa{\t*{aE}} \\
+        ao & \apa{\t*{ao}} & \apa{\t*{aO}} \\
+        ea & \apa{\t*{ea}} & \apa{\t*{Ea}} \\
+        eo & \apa{\t*{eo}} & \apa{\t*{EO}} \\
+        ey & \apa{@} & \apa{\t*{EW}}\\
+        oa & \apa{wa} & \apa{\t*{Oa}} \\
+        oe & \apa{we} & \apa{\t*{OE}} \\
+        ya & \apa{ja} & \apa{\t*{Wa}} \\
+        ye & \apa{je} & \apa{\t*{WE}} \\
+        yo & \apa{jo} & \apa{\t*{iO}}\\\hline
+    \end{tabular}
+\end{center}
+\egroup
+
+All other pairs (e.g. \textbf{ay} or \textbf{oo}) either never appear in Flavan or if they do, they do not diphthongize and are pronounced as two separate syllables. Note that this rule is applied \emph{after} ytta assimilation, for example \textbf{babe yrk} is \apa{"ba.be \s{r}k}, not \apa{"ba.b@rk}.
+
 \end{itemize}
 
 \subsubsection{The tell-tale \emph{ytta} and regional variation}\label{ytta}
@@ -704,7 +731,7 @@ The final array of consonantal sounds of CDR Flavan, including \aph{those only a
     Trill   &          &             &        &r\\
     Flap    &          &             &        &\aph{\textipa{R}}\\
     Fricative   &          & f \aph{v}          & \dh & s \aph{\textipa{z}} & \textipa{S} & & \aph{x} \\
-Approximant &          &             &        &          &              & \aph{j}     & \aph{\textturnmrleg} \\
+    Approximant &          &             &        &          &              & \aph{j}     & \aph{w} \aph{\textturnmrleg} \\
 Lateral Appr.&          &           &         & \aph{l}\\
 \end{tabular}
 
@@ -1505,6 +1532,8 @@ A negation modifier for verbs has already been introduced,
 
 Flavan arithmetic terminology has undergone a remarkable number of revisions, most of them artificial, following the strong push for clarity, ease of calculation and mutual intelligibility imposed by the needs of a civilization based on trading and travel. The current situation is a positional base-16 / base-4 system, with the spoken language mostly working in the former while written numerals (described in the reference for the script) employ the latter.
 
+\subsection{Cardinals}
+
 The first cardinal numerals are
 
 \begin{center}
@@ -1566,6 +1595,21 @@ This insistence of Flavans on reading from least significant to most significant
 
 There is a possible ambiguity when \textbf{e} and \textbf{ka} appear consecutive, as in \textbf{e ka garda} $= 1 + 2\times 16$, as they can be confused with \textbf{eka}, as in \textbf{eka garda} $ = 6 \times 16$. In these cases \textbf{e} is replaced by \textbf{ef}. So $1+ 2\times 16$ is \textbf{ef-ka-garda}.
 
+\subsection{Ordinals}
+
+Incredibly, Flavans have zero-indexed ordinals. When counting three ordered elements, they will mark them as ``zero'', ``one'' and ``two''. An ordinal is built by taking the corresponding cardinal adjective as a noun and taking the genitive, thus:
+
+\begin{center}
+    \begin{tabular}[]{>{\bfseries}c | c | c | c}
+        \nf{Ordinal} & pronunc. & preferred translation & literal\\
+        kydhet & \ipa{"k1jD:et} & first & ``zeroeth''\\
+        et & \ipa{Et} & second & ``first''\\
+        kat & \ipa{kat} & third & ``second''
+    \end{tabular}
+\end{center}
+
+and so on.
+
 \pagebreak
 
 \section{Possession}
@@ -1593,6 +1637,23 @@ There is an exception in genitive expressing geographical or cultural origin, su
 
 
 \pagebreak
+\section{Dictionary Lookup Flowchart}
+
+Flavan has great variety in its inflection patterns (in particular, affecting both beginning and end of a word). Combined with a large chance for collisions and ambiguities, this can make looking up words in a dictionary particularly difficult. Here we list some simple test to be applied to any word whose lookup of the unmarked form is proving to be challenging.
+
+\begin{itemize}
+    \item Is it one letter? Check if it's a personal pronoun or a numeral.
+    \item Is it two letters? Check if it's a declension of \textbf{ak}, a postposition, a personal pronoun, a pronoun specifier particle, or a numeral.
+    \item Does the first consonant cluster repeat twice? (e.g. \textbf{ttlyttla}). Check for \fsr , and if it's an ablative or a strengthening.
+    \item Does it end in \textbf{t}, even better \textbf{kt}? Check if it's a genitive.
+    \item Is the first vowel \textbf{a}? Change it to \textbf{e, o, y} and search for those forms, it might be an absolutive.
+    \item Does it end in any of the tense endings listed in section \ref{verbs}? If so, it might be a verb. Build the alleged present indicative and search for it.
+    \item Does it end in \textbf{y} or \textbf{ef}? Might be dual or plural.
+    \item Does it end in \textbf{a}? Probably an adjective. Not a guarantee.
+\end{itemize}
+
+\pagebreak
+
 \section{Dictionary}
 
 Flavan script transcription is rotated to horizontal for formatting purposes.

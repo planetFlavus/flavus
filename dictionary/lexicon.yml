@@ -798,4 +798,21 @@ torenan:
     tr: meat, flesh (human)
     part: n
 
+dordatta: 
+    tr: effect, result
+    part: n
+    note: the cause is in ablative
 
+kof:
+    tr: brick
+    part: n
+
+blaeg:
+    tr: gold
+    part: n
+
+ttkat:
+    tr: hit
+    part: v tr
+    note: "X.ERG Y.ABS Z.ABL (ttkat): X hits Y with Z"
+    

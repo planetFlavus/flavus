@@ -15,7 +15,7 @@ font.addLookupSubtable('liga', 'liga')
 
 extra = [u" ",u"-",u"h"]
 consonants = [u"m",u"n",u"k",u"t",u"d",u"g",u"r",u"ng",u"s",u"l",u"shl",u"dh",u"dhl",u"p",u"b",u"rd",u"rb",u"f",u"sh",u"tt",u"dd",u"rk",u"ttl",u"dd",u"ttk",u"rg",u"gm",u"pd"]
-vowels = [u"e",u"y",u"o"]
+vowels = [u"a",u"e",u"y",u"o"]
 
 glyph_sizes = {
         u"gm" : 1.5,
@@ -42,13 +42,13 @@ for e in extra:
 for v in vowels:
     glyphs[v] = u"-"+v
 
-glyphs[u"a"] = u"-"
+#glyphs[u"a"] = u"-"
 
 for c in consonants:
     glyphs[c] = c
-    glyphs[c+u"a"] = c
-    if c in glyph_sizes:
-        glyph_sizes[c+u"a"] = glyph_sizes[c]
+ #   glyphs[c+u"a"] = c
+ #   if c in glyph_sizes:
+ #       glyph_sizes[c+u"a"] = glyph_sizes[c]
     for v in vowels:
         glyphs[c+v] = c+v
         if c in glyph_sizes:
@@ -96,6 +96,13 @@ for letter,filename in glyphs.iteritems():
 
     # set glyph side bearings, can be any value or even 0
 #    glyph.left_side_bearing = glyph.right_side_bearing = 0
+
+  #  if letter[-1] == u"a":
+  #      if len(letter)>1:
+  #          print "doing %s"%letter
+  #          glyph.addPosSub("fina",letter[:-1])
+  #          print  letter[:-1]
+
 
 #font.generate("foobar.pfb", flags=["tfm", "afm"]) # type1 with tfm/afm
 font.generate("flavangeometric.otf") # opentype
