@@ -235,6 +235,10 @@ rdan:
     tr: together
     part: adverb
 
+rdan:
+    tr: with (in company of, together with, endowed with)
+    part: postposition
+
 rkyng:
     tr: beard
     part: n
@@ -816,3 +820,68 @@ ttkat:
     part: v tr
     note: "X.ERG Y.ABS Z.ABL (ttkat): X hits Y with Z"
     
+
+n:
+    tr: "abbreviation of \\textbf{ngon}"
+    part: personal pronoun
+
+m:
+    tr: "abbreviation of \\textbf{my}"
+    part: personal pronoun
+
+ngon:
+    tr: I (first-person singular ergative)
+    part: personal pronoun
+my:
+    tr: you (second-person ergative)
+    part: personal pronoun
+
+my:
+    tr: singular (only used for second-person)
+    part: specifier particle
+
+e:
+    tr: one (cardinal)
+    part: adj
+    note: also used to mark indefiniteness, see section \ref{nouns}
+
+
+
+bogm:
+    tr: marks ergative declarative
+    part: declarative pronoun
+
+bag:
+    tr: marks absolutive declarative
+    part: declarative pronoun
+
+
+dhlorg:
+    tr: a common dish made of gum-birch eggs.
+    part: n
+
+esh:
+    tr: inside
+    part: postposition
+
+gym:
+    tr: into, inwards
+    part: postposition
+
+dar:
+    tr: until, up to
+    part: postposition
+
+koba:
+    tr: near, next to, close to
+    part: postposition
+
+bo:
+    tr: towards, to
+    part: postposition
+
+gmer:
+    tr: during, while (temporal)
+    part: postposition
+
+

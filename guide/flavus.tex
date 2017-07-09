@@ -86,7 +86,7 @@
 
 \title{Flavus\\\large Biology, Culture, Language}
 
-\renewcommand\thesection{}
+%\renewcommand\thesection{}
 
 \begin{document}
 
@@ -909,7 +909,7 @@ Shlem.ERG woman.ABS was\\}{	\Flav{shlem katarotta attk}}{0.7}{0.3}
 \end{multicols}
 
 \pagebreak
-\section{Nouns}
+\section{Nouns}\label{nouns}
 
 \begin{multicols}{2}
 
@@ -1076,13 +1076,13 @@ Terminative&  end point of action & & dar\\
 Adessive   &  near  & \multirow{12}{*}{DAT} & \multirow{3}{*}{koba}      \\\cline{1-2}
 Apudessive &  next to  &                &\\ \cline{1-2}
 Pertingent &  touching  & &\\\xline
-Locative   &  at (location) & & \multirow{2}{*}{-} \\ \cline{1-2}
+Dative & recipient &  & \multirow{3}{*}{-}\\ \cline{1-2}
+Locative   &  at (location) & &  \\ \cline{1-2}
 Lative     &  motion to (location) & & \\ \cline{1-2}\cline{4-4}
 Allative   &  motion towards && bo\\ \xline
 Temporal & during &  & gmer\\\xline
-Comitative & in company of &  & \multirow{4}{*}{rdan}\\ \cline{1-2}
+Comitative & in company of &  & \multirow{3}{*}{rdan}\\ \cline{1-2}
 Sociative & together with    & &  \\ \cline{1-2}
-Dative & recipient &  & \\ \cline{1-2}
 Ornative & endowment with & & \\\cline{1-2} \cline{4-4}
 Benefactive & for the benefit of & & atta\\ \hline\hline
 Intrative  &  between  & \multirow{14}{*}{ABL}  &gmer\\\xline
@@ -1303,14 +1303,14 @@ In addition, \textbf{my} as the pronoun also merges with postposition in the sam
 
 \begin{multicols}{2}
 	\subsection{Tense}
-	Conjugated tense is relative to the absolute tense of the proposition, which is instead established through specific time adverbs or inferred from context (e.g. inherited from the previous sentence). So the three conjugated tenses, \textbf{present}, \textbf{anterior}, \textbf{posterior} mean the action is performed respectively simultaneously, before, or after the current absolute time.
+    Conjugated tense is relative to the absolute tense of the proposition, which is instead established through specific time adverbs or inferred from context (e.g. inherited from the previous sentence). So the three conjugated tenses, \textbf{present} (or \textbf{simultaneous}), \textbf{anterior}, \textbf{posterior} mean the action is performed respectively simultaneously, before, or after the current absolute time.
 
 	Relative tense is marked by the final consonant cluster; verbs are arranged in classes according to their present tense ending, with the -k class the most populated.
 
 	\vspace{10pt}
 
 	\begin{tabularx}{\columnwidth}{>{\rowmac}Y>{\rowmac}Y>{\rowmac}Y<{\clearrow}}
-		\setrow{\bfseries}Present & Anterior &Posterior \\
+		\setrow{\bfseries}Simult. & Anterior &Posterior \\
 		\hline
 		-k & -ttk & -dh \\
 		-rd & -rk & -r \\
@@ -1332,7 +1332,7 @@ In addition, \textbf{my} as the pronoun also merges with postposition in the sam
 		\textbf{Conditional} & -ate- & apodosis\\
 	\end{tabularx}
 
-	\subsection{Vowel harmony}
+	\subsection{Vowel metaphony}
 
 	When the mood vowel is conjugated to either of -e- or -o- (deontic or subjunctive), and the stem has at least one vowel, the last vowel of the stem is changed to -o- or -e- respectively. For example, \textbf{agarak} (\emph{to be well}) when conjugated to the deontic mood becomes \textbf{agarak}\textrightarrow\textbf{agarek}\textrightarrow\textbf{agorek}.
 
@@ -1412,9 +1412,52 @@ A few popular modifiers:
 		
 Modifiers can be composed together, even repeating the same modifier: \emph{to run fast} could be translated as \textbf{papapat}, applying FSR twice.
 
+\pagebreak
+    \subsection{Infinitive}
+
+    To build the infinitive, take the stem (\textbf{S}) and inflect as follows:
+
+    \begin{center}
+    \newcommand{\Ss}{\textbf{S}}
+    \begin{tabular}[]{c c c c}
+         & agent & patient & indirect \\
+     ergative & \Ss-en & \Ss-edyn & \Ss-ober \\
+     absolutive & \Ss-an  & \Ss-edon & \Ss-aber \\
+     dative & o-\Ss-en & o-\Ss-edyn & o-\Ss-ober \\
+     ablative & \fsr + \Ss-en & \fsr + \Ss-edyn & \fsr + \Ss-ober\\
+    \end{tabular}
+
+
+\end{center}
+
+    The declension is very similar to that of a normal noun, with the exception that the absolutive affects the last, instead of the first, vowel.
+
+    The agent infinitive of \textbf{ak} is irregular. Instead of \textbf{aken, akan, oaken, kaken}, it goes \textbf{en, an, oaken, nen}.
+
+    \columnbreak
+
 	\subsection{Aspect}
 
-    \cmmnt{do perfectiveness}
+    Different aspects are constructed through locutions involving participles. Tense and aspect are completely separate; all three tenses can be used with all aspects. In the following, \textsc{.tense} represents conjugation in the desired tense. In addition, \textsc{participle.} denotes the desired voice (agent, patient, indirect) of participle.
+
+    \begin{itemize}
+        \item \textbf{Discrete}, including 
+            \begin{itemize}
+                \item \textbf{Perfective}: an action as a whole, with no reference to its temporal structure during its occurrence: ``the boy drank the juice'', or ``I pinch myself''.
+                \item \textbf{Habitual}: an action repeated multiple times over a span of time: ``I would walk my dog every morning'' or ``He shaves with a razor''.
+                \item \textbf{Stative}: a continuous action not requiring activity or evolution, often a consequence of a past perfective action: ``She knows how to swim'' (because she learnt at an earlier time).
+            \end{itemize}
+            is marked by using the verb directly:\\
+            verb\textsc{.tense}
+        \item \textbf{Imperfect}, for continuous actions that are in progress at the specified time: ``The man was eating'', ``I will be travelling then'', ``She's sleeping''. Note that Flavan can also not mark for imperfectiveness if it's either obvious from context or if the perfective alternative is impossible / illogical, for example the latter example ``She's sleeping'' would probably just be expressed as a perfective.
+            
+            The imperfect is marked with\\
+            \textsc{participle}.verb\textsc{.present} be\textsc{.tense}
+        \item \textbf{Gnomic}: general or universal truths, aphorisms. Example: ``people breathe''. The gnomic is marked with\\
+            \textsc{participle}.verb\textsc{.present} be\textsc{.present}
+        \item Inceptive
+        \item Terminative
+    \end{itemize}
 
 \end{multicols}
 
