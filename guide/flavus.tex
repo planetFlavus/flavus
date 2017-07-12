@@ -82,6 +82,14 @@
 
 \newcommand{\fsr}{FSR}
 
+\newcommand{\grammar}[1]{\textsc{#1}}
+\newcommand{\GEN}{\grammar{GEN}}
+\newcommand{\ERG}{\grammar{ERG}}
+\newcommand{\ABS}{\grammar{ABS}}
+\newcommand{\DAT}{\grammar{DAT}}
+
+
+
 \newcommand{\nf}[1]{{\normalfont #1}}
 
 \title{Flavus}
@@ -847,7 +855,7 @@ Flavan could be briefly described as a SOV language, meaning sentences follow th
     Shlem.SUBJECT dhlorg.OBJECT eats}{\Flav{shlem dhlarg rbam}}{0.6}{0.4}
 
 
-However, this is not strictly correct and potentially confusing because Flavan has ergative-absolutive alignment. This means that the distinction between subject and object is not well-defined, while entities involved in an actions are instead classified as \textbf{agents} (subjects of transitive actions) or \textbf{patients} (objects of transitive actions or subjects of intransitive actions). In fact, Flavan is unusual in being more ``thorough'' in its ergativity than most earthly ergative languages. The word order is thus better described as agent-patient-verb, or APV. 
+    However, this is not strictly correct and potentially confusing because Flavan has ergative-absolutive alignment. This means that the distinction between subject and object is not well-defined, while entities involved in an actions are instead classified as \textbf{agents} (subjects of transitive actions) or \textbf{patients} (objects of transitive actions or subjects of intransitive actions). In fact, Flavan is unusual in being more ``thorough'' in its ergativity than most earthly ergative languages, a peculiarity known as Flavan \textbf{``ultraergativity''}. The word order is thus better described as agent-patient-verb, or APV. 
 
 The nouns/pronouns that represent the agent/patient are declensed respectively in the \textbf{ergative}/\textbf{absolutive} cases. This means for example:
 
@@ -1036,7 +1044,9 @@ The dative is built through the prefix \textbf{o-} on the ergative form.
 
 The ablative indicates motion away from or through, extraction, origin, topic. As the instrumental, it denotes the action happens by means or thanks to the noun.
 
-The ablative is marked by \textbf{first syllable reduplication} (FSR) which is the repetition of the first syllable with a vowel shift, namely if the first vowel is \textbf{e,o,y} the duplicated vowel is \textbf{a}, if it is \textbf{a} the duplicated vowel is \textbf{y}. To be precise, what is duplicated is only the onset cluster, the (shifted) nucleus, excluding the coda. 
+The ablative is marked by \textbf{first syllable reduplication} (FSR) which is the repetition of the first syllable with a vowel shift, namely if the first vowel (or, if a diphthong, the first vowel of the diphthong) is \textbf{e,o,y} the duplicated vowel is \textbf{a}, if it is \textbf{a} the duplicated vowel is \textbf{y}. To be precise, what is duplicated is only the onset cluster, the (shifted) nucleus, excluding the coda.
+
+Exception: if the first syllable is any one of these: \textbf{pa-, ma-, ba-, sa-}, the duplicated vowel is \textbf{a} instead of \textbf{y}, so \textbf{papa-, mama-, baba-, sasa-}.
 
 If the noun already starts in a vowel, then one only reduplicates the cluster right after it.
 
@@ -1054,6 +1064,28 @@ A few examples:
     \end{tabular}
 \end{center}
 
+
+\subsection{Vocative}
+
+The vocative is used for directly addressing the object or person specified by the noun.
+
+\begin{minipage}{\columnwidth}
+
+Inflection for the vocative is very simple: it consists essentially of the addition to the ergative form of the postfix \textbf{-na}, which is repeated twice for dual or plural. So\\
+
+\begin{tabular}[]{c | c  | c}
+    singular & dual & plural\\
+    \hline
+    -na & -nana & -nana
+\end{tabular}
+
+\end{minipage}
+
+The vocative suffix is often rendered with an actual hyphen in standard romanization, for the purpose of clarity.
+
+
+\vfill\null
+\columnbreak
 
 \end{multicols}
 \hrule
@@ -1073,7 +1105,13 @@ The noun \textbf{berb} \ipa{bErb}, \emph{arm} is declensed as follows:
 
 \subsection{Definiteness}
 
-Flavan avoids marking for definiteness unless necessary. For singular and dual countable, indefiniteness is signaled by the adjectives \textbf{e} and \textbf{ka}, the literal cardinals \emph{one} and \emph{two}, placed after the noun just like normal adjectives. \cmmnt{finire}
+Flavan avoids marking for definiteness unless necessary. More specifically, Flavan distinguishes \textbf{definite} nouns, associated with an instance of a type of object which either has already been introduced or whose identity is obvious (including the special case of objects of which there is only one instance, such as \emph{the sun} or abstract nouns such as \emph{sadness}), from \textbf{indefinite}, used for emphasizing that a \emph{new} instance is being introduced with no reference to previously mentioned nor obvious instance.
+
+Definiteness is unmarked. Marking for indefiniteness is facultative if it doesn't bring essential information; e.g. in \emph{they shared \textbf{a} long kiss} the indefiniteness of the kiss is obvious from context, while in \emph{\textbf{a} man came to me this morning} it is important to specify that the man is a new man, not related to any introduced before or alluded to.
+
+For singular and dual countable, indefiniteness is signaled by the adjectives \textbf{e} and \textbf{ka}, the literal cardinals \emph{one} and \emph{two}, placed after the noun just like normal adjectives. 
+
+\cmmnt{add plural and uncountable}
 
 
 
@@ -1109,8 +1147,11 @@ Temporal & during &  & gmer\\\xline
 Comitative & in company of &  & \multirow{3}{*}{rdan}\\ \cline{1-2}
 Sociative & together with    & &  \\ \cline{1-2}
 Ornative & endowment with & & \\\cline{1-2} \cline{4-4}
-Benefactive & for the benefit of & & atta\\ \hline\hline
-Intrative  &  between  & \multirow{14}{*}{ABL}  &gmer\\\xline
+Benefactive & for the benefit of & & atta\\ 
+\hline\hline
+Intrative  &  between  & \multirow{14}{*}{ABL}  &\multirow{3}{*}{gmer}\\\cline{1-2}
+Perlative & movement through &  &  \\\cline{1-2} 
+Prosecutive & movement along or across & &\\\xline
 Subessive  &  under  &&dhana\\\xline
 Superessive&  over  & & ena\\\xline
 Egressive  &  motion out of  & &foter\\\xline
@@ -1118,8 +1159,6 @@ Ablative   &  motion away from  & & \multirow{4}{*}{-} \\\cline{1-2}
 Elative    &  out of, produced from & &\\ \cline{1-2}
 Initiative &  starting point of an action  & &\\ \cline{1-2}
 Instrumental & by means of, using & &   \\\xline
-Perlative & movement through &  & \multirow{2}{*}{gmer} \\\cline{1-2} 
-Prosecutive & movement along or across & &\\
 \xline
 %\multicolumn{4}{c}{\textbf{Temporal}}\\\hline
 Antessive & before & & ena\\\xline
@@ -1132,7 +1171,7 @@ Causal & because of &  & foter\\
 Possessive & possession by & GEN & - \\
 \hline\hline
 Vocative & addressing directly & VOC & - \\
-\hline\hline
+\hline
 \end{tabular} 
 \end{center}
 
@@ -1153,7 +1192,7 @@ To be precise, the above construction describes the attributive use of adjective
 The strength of adjectives can be modulated by a series of constructions.
 
 \begin{itemize}
-	\item \textbf{strengthening} (e.g. \emph{very}) is realized through \textbf{first syllable reduplication}. For example, \textbf{ttla} \emph{good-looking, beautiful} becomes \textbf{ttlyttla}, \emph{very beautiful}.
+    \item \textbf{strengthening} (e.g. \emph{very}) is realized through \textbf{first syllable reduplication}, as described in section \ref{nouns}. For example, \textbf{ttla} \emph{good-looking, beautiful} becomes \textbf{ttlyttla}, \emph{very beautiful}.
 	\item \textbf{inversion} (not to be confused with negation) turns an adjective into its opposite, and it's marked by the prefix \textbf{dhla-}. Example: \textbf{dhlattla} \emph{ugly}.
 \end{itemize}
 
@@ -1714,8 +1753,8 @@ Flavan has great variety in its inflection patterns (in particular, affecting bo
     \item Does the first consonant cluster repeat twice? (e.g. \textbf{ttlyttla}). Check for \fsr , and if it's an ablative or a strengthening.
     \item Does it end in \textbf{t}, even better \textbf{kt}? Check if it's a genitive.
     \item Is the first vowel \textbf{a}? Change it to \textbf{e, o, y} and search for those forms, it might be an absolutive.
-    \item Does it end in any of the tense endings listed in section \ref{verbs}? If so, it might be a verb. Build the alleged present indicative and search for it.
-    \item Does it end in \textbf{y} or \textbf{ef}? Might be dual or plural.
+    \item Does it end in any of the tense endings listed in section \ref{verbs}? Does it start in any of the participle prefixes from the same section? If so, it might be a verb. Build the alleged present indicative and search for it.
+    \item Does it end in \textbf{y} or \textbf{ef}? Begin in \textbf{y} or \textbf{fe}? Might be dual or plural.
     \item Does it end in \textbf{a}? Probably an adjective. Not a guarantee.
 \end{itemize}
 

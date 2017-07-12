@@ -175,9 +175,10 @@ mak:
         - teach, pave the way
     part: v tr
 
-mashl:
-    tr: go, enter
+rdyat:
+    tr: go
     part: v intr
+    
 
 matty:
     tr: which, what
@@ -224,7 +225,7 @@ pyrdak:
     part: v tr
 
 rbam:
-    tr: eat
+    tr: eat, drink, ingest
     part: v tr
 
 rda:
@@ -884,4 +885,84 @@ gmer:
     tr: during, while (temporal)
     part: postposition
 
+maegadd:
+    tr: destruction, chaos, calamities, unluckiness
+    part: n
 
+blyat:
+    tr: kill
+    part: v tr
+
+blyat:
+    tr: die
+    part: v intr
+
+dhadhat:
+    tr: laugh
+    part: v intr
+
+
+maena:
+    tr: nipple
+    part: n
+
+oamadhlyg:
+    tr: the group of inhabitants of a village
+    part: n
+
+oamadher:
+    tr:
+        - an inhabitant of a village
+        - "an inhabitant of the same village as \\GEN"
+
+tyrmat:
+    tr: undress
+    part: v tr
+
+tyrmat:
+    tr: get undressed
+    part: v intr
+
+detyrm:
+    tr: naked, undressed, bare
+    part: adj
+
+gyrgena:
+    tr: forbidden
+    part: adj
+
+dhlynga:
+    tr: brave, fearless
+    part: adj
+
+kye:
+    tr: if and only if
+    part: conjunction
+
+rrr:
+    tr: uhm, interjection marking esitation
+    part: interjection
+    note: unattested in writing
+
+shlattarat:
+    tr: flow
+    part: v intr
+
+shlattarat:
+    tr: pour
+    part: v tr
+
+
+eyne:
+    tr: silver
+    part: n
+
+gasy:
+    tr: pointlessly, in vain, with no purpose
+    part: adv
+
+
+syat:
+    tr: follow
+    part: v intr
+    note: "\\ABS follows \\DAT"
