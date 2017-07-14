@@ -14,13 +14,18 @@ font.addLookup('liga', 'gsub_ligature', (), (('liga', (('latn', ('dflt')), )), )
 font.addLookupSubtable('liga', 'liga')
 
 extra = [u" ",u"-",u"h"]
-consonants = [u"m",u"n",u"k",u"t",u"d",u"g",u"r",u"ng",u"s",u"l",u"shl",u"dh",u"dhl",u"p",u"b",u"rd",u"rb",u"f",u"sh",u"tt",u"dd",u"rk",u"ttl",u"dd",u"ttk",u"rg",u"gm",u"pd"]
+consonants = [u"m",u"n",u"k",u"t",u"d",u"g",u"r",u"ng",u"s",u"l",u"shl",u"dh",u"dhl",u"p",u"b",u"rd",u"rb",u"f",u"sh",u"tt",u"dd",u"rk",u"ttl",u"dd",u"ttk",u"rg",u"gm",u"pd",u"bl", u"ttf",u"sg", u"ttg"]
 vowels = [u"a",u"e",u"y",u"o"]
 
 glyph_sizes = {
         u"gm" : 1.5,
         u"ttg" : 1.3,
-        u"k": 0.8
+        u"k": 0.8,
+        u"bl":1.75,
+        u"sg":1.75,
+        u"ttf": 2.0,
+        u"ttk": 1.0 + 3.0/8.0,
+        u"ttg": 1.0 + 3.0/8.0
         }
 
 # combine vowel diacs
@@ -107,3 +112,18 @@ for letter,filename in glyphs.iteritems():
 #font.generate("foobar.pfb", flags=["tfm", "afm"]) # type1 with tfm/afm
 font.generate("flavangeometric.otf") # opentype
 #font.generate("foobar.ttf") # truetype
+
+
+
+# create test table
+
+tabl = ""
+
+for c in consonants:
+    for v in vowels:
+        tabl += r"\flav{"+c+v +r"} &"
+
+    tabl += r"\\"
+
+f = open("testtable.tex",'w')
+f.write(tabl)

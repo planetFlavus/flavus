@@ -5,11 +5,35 @@
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    id="svg8"
    version="1.1"
    viewBox="0 0 135.46666 135.46667"
    height="512"
-   width="512">
+   width="512"
+   sodipodi:docname="l.svg"
+   inkscape:version="0.92.1 r15371">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="781"
+     inkscape:window-height="1023"
+     id="namedview8203"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="194.72425"
+     inkscape:cy="227.2194"
+     inkscape:window-x="12"
+     inkscape:window-y="41"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg8" />
   <defs
      id="defs2" />
   <metadata
@@ -20,20 +44,31 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
-  <g
-     transform="translate(0,-161.53332)"
-     id="layer1">
-    <path
-       id="path4670"
-       d="m 0,229.26666 67.73333,67.73332"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.93333333;stroke-linecap:square;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
-    <path
-       id="path4672"
-       d="m 135.46666,229.26666 c -33.86666,-33.86667 -67.733329,0 -101.599994,33.86666"
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:16.93333244;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-  </g>
-</svg>
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot8748"
+     style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Arial;font-style:normal;font-weight:bold;font-size:20px;line-height:125%;letter-spacing:0px;word-spacing:0px;-inkscape-font-specification:Arial Bold;font-stretch:normal;font-variant:normal"><flowRegion
+       id="flowRegion8750"><rect
+         id="rect8752"
+         width="3319.322"
+         height="1774.644"
+         x="-3219.5254"
+         y="82.440681" /></flowRegion><flowPara
+       id="flowPara8754"></flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot8756"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:192px;line-height:125%;font-family:Gentium;-inkscape-font-specification:'Gentium Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     transform="matrix(0.89661297,0,0,0.89661297,-49.75999,-66.954032)"><flowRegion
+       id="flowRegion8758"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:192px;font-family:Gentium;-inkscape-font-specification:'Gentium Bold'"><rect
+         id="rect8760"
+         width="331.93219"
+         height="446.91525"
+         x="97.627121"
+         y="54.237289"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:192px;font-family:Gentium;-inkscape-font-specification:'Gentium Bold'" /></flowRegion><flowPara
+       id="flowPara8762">l</flowPara></flowRoot></svg>

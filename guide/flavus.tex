@@ -83,10 +83,29 @@
 \newcommand{\fsr}{FSR}
 
 \newcommand{\grammar}[1]{\textsc{#1}}
-\newcommand{\GEN}{\grammar{GEN}}
-\newcommand{\ERG}{\grammar{ERG}}
-\newcommand{\ABS}{\grammar{ABS}}
-\newcommand{\DAT}{\grammar{DAT}}
+\newcommand{\GEN}{\grammar{gen}}
+\newcommand{\ERG}{\grammar{erg}}
+\newcommand{\ABS}{\grammar{abs}}
+\newcommand{\DAT}{\grammar{dat}}
+\newcommand{\POST}{\grammar{post}}
+\newcommand{\SIM}{\grammar{sim}}
+\newcommand{\ANT}{\grammar{ant}}
+\newcommand{\ABL}{\grammar{abl}}
+
+\newcommand{\DEO}{\grammar{deo}}
+\newcommand{\PL}{\grammar{pl}}
+\newcommand{\DU}{\grammar{du}}
+\newcommand{\VOC}{\grammar{voc}}
+\newcommand{\INT}{\grammar{int}}
+\newcommand{\NOT}{\grammar{not}}
+\newcommand{\INV}{\grammar{inv}}
+\newcommand{\STR}{\grammar{str}}
+\newcommand{\SJV}{\grammar{sjv}}
+\newcommand{\COND}{\grammar{cond}}
+\newcommand{\APART}{\grammar{apart}}
+\newcommand{\PPART}{\grammar{ppart}}
+\newcommand{\IPART}{\grammar{ipart}}
+\newcommand{\IND}{\grammar{ind}}
 
 
 
@@ -619,7 +638,7 @@ As a final note, it is possible for the cluster \ipa{kt} (actually pronounced \a
     \item \textbf{mid opening:} \ipa{e} and \ipa{o} when stressed open up to \apa{E} and \apa{O} respectively. Example: \textbf{rgodha} \flav{rgodha} \ipa{"rgO.dh:a}, \emph{long}, and \textbf{egord} \ipa{"Egord}, \emph{examination}
     \item \textbf{syllabic l:} word-final \ipa{l} after a consonant becomes syllabic \apa{\s{l}} (this creates a new syllable). Example: \textbf{moshl} \flav{moshl} \ipa{"mO.S\s{l}}, \emph{mother}. (Some speakers do the same with word-final \ipa{gm} to make it \apa{g\s{m}}, others insert a schwa: \apa{gm@}).
     \item \textbf{nasalization:} (rule not always applied) a vowel\footnote{Actually, the syllabics could in principle also nasalise, however two of them are already nasal and \apa{\s{l}} cannot appear after \apa{N}. The only remaining one is \apa{\s{r}}, which following \apa{N} becomes the nasal syllabic trill \apa{\~{\s{r}}}. This very rare sound only appears in a few words, including \textbf{nyngyr} \apa{"njW.N\~{\s{r}}}, \emph{sweat}. } following \ipa{N} will become nasal. Example: \textbf{ngon} \flav{ngon} \ipa{N\~on}, \emph{I (ergative)}
-    \item word-final \ipa{D}, or \ipa{D} between two vowels becomes geminated: \apa{D:}. Example: \textbf{my agaredh} \flav{my\\aga"rEdh} \ipa{mj1aga'reD:} \emph{goodbye}
+    \item word-final \ipa{D}, or \ipa{D} between two vowels becomes geminated: \apa{D:}. Example: \textbf{my agaredh} \flav{my\\agaredh} \ipa{mj1aga'rED:} \emph{goodbye}
     \item \ipa{r} alone between two vowels with at least the first unstressed becomes a flap: \apa{R}. Example: \textbf{pottarat} \flav{pottarat} \ipa{pot:a'Rat}, \emph{sew}.
     \item \textbf{diphthongization:} some pairs of vowels when adjacent, even between different words, will be pronounced as a single sillable, either a diphthong or a vowel + semivowel pair. We will call both of these cases a ``diphthong'' employing a common misnomer. The diphthongs and their pronunciations are as follows:
 
@@ -875,10 +894,10 @@ Flavan could be briefly described as a SOV language, meaning sentences follow th
 The nouns/pronouns that represent the agent/patient are declensed respectively in the \textbf{ergative}/\textbf{absolutive} cases. This means for example:
 
 \sidebysider{\textbf{ngon nar rbap} - \emph{I ate it}\\
-    me.ERG it.ABS ate}{	\Flav{ngon nar rbap}}{0.6}{0.4}
+    me.\ERG it.\ABS ate}{	\Flav{ngon nar rbap}}{0.6}{0.4}
 
    \sidebysider{	\Flav{ngan bodark}}{\textbf{ngan bodark} - \emph{I slept}\\
-    me.ABS slept}{0.4}{0.6}
+    me.\ABS slept}{0.4}{0.6}
 
 The sleeper (actor of an intransitive action) is treated like the eaten (object of a transitive action).
 
@@ -888,7 +907,7 @@ There is yet another alien element to Flavan syntax, the \textbf{wanter}. This c
 
 
     \sidebysider{\Flav{shlem dhlarg\\ rbem ngof}}{\textbf{Shlem dhlarg rbem ngof} \\ \emph{I want Shlem to eat the dhlorg} \\
-Shlem.ERG dhlorg.ABS eat.DEONTIC me.DAT}{0.3}{0.7}
+Shlem.\ERG dhlorg.\ABS eat.\DEO me.\DAT}{0.3}{0.7}
 
 Thus to conclude, the order could be simplified as APIVW, or
 
@@ -948,7 +967,7 @@ The verb \textbf{ak}, meaning \emph{to be} in the sense of copula (i.e. ``the sk
 
 \sidebysider{
 	\textbf{Shlem katarotta attk} - \emph{Shlem was a woman}\\
-Shlem.ERG woman.ABS was\\}{	\Flav{shlem katarotta attk}}{0.7}{0.3}
+Shlem.\ERG woman.\ABS was\\}{	\Flav{shlem katarotta attk}}{0.7}{0.3}
 
 2: It always disappears in the present indicative, an example of \textbf{zero copula}. So \emph{Shlem is a woman} is literally \textbf{Shlem katarotta}. It readily reappears when conjugating the verb in any way, for example in the interrogative mood: \textbf{Shlem katarotta yk?} - \emph{is Shlem a woman?}. Thus, the specific word \textbf{ak} does not actually exist in Flavan.
 
@@ -1217,7 +1236,7 @@ Comparison is subtle and alien in Flavan. It is expressed by means of \emph{comp
 
 \begin{center}
 	\textbf{Shlem ttla o-Rkon merak} - \emph{Shlem is more beautiful than Rkon}\\
-	Shlem.ERG beautiful Rkon.DAT merak.IND.PR\\
+	Shlem.\ERG beautiful Rkon.\DAT merak.\IND.\SIM\\
 	\Flav{shlem ttlaa\\orkon merak}
 \end{center}
 
@@ -1559,20 +1578,20 @@ Examples for each position (with the subclause in square brackets for clarity):
     ``I saw a man that was eating (transitive)''\\
     \textbf{Ngon toreb [rorbam] moratt}
     \ipa{N\~On "tOreb ro"rbam mo"rat:}\\
-    me.ERG man.ABS (eat.IND.PRES).(AG PART) see.IND.ANT\\
+    me.ERG man.ABS (eat.\IND.\SIM).\APART see.\IND.\ANT\\
     \vspace{1em}
     \textbf{ABSOLUTIVE}\\*
     ``I saw a man that was running''\\
     \textbf{Ngon toreb [depapat] moratt}
     \ipa{N\~On "tOreb depa"pat mo"rat:}\\
-    me.ERG man.ABS (eat.IND.PRES).(PAT PART) see.IND.ANT\\
+    me.ERG man.ABS (eat.IND.\SIM).(PAT PART) see.IND.ANT\\
 
     \vspace{1em}
     \textbf{DATIVE}\\*
     ``I saw the man that you gave the book to''\\
     \textbf{Ngon toreb [my kagmenyr dokatt] moratt}
     \ipa{N\~On "tOreb depa"pat mo"rat:}\\
-    me.ERG man.ABS you.ERG book.ABS (give.IND.PRES).(DAT PART) see.IND.ANT\\
+    me.ERG man.ABS you.ERG book.ABS (give.IND.\SIM).(DAT PART) see.IND.ANT\\
 
     (note: \textbf{dokatt} is in the anterior tense since the giving of the book was certainly anterior to the main action.)
 
@@ -1591,7 +1610,7 @@ The main clause is stated normally, but the special adjective \textbf{kon} is ap
 \begin{center}
     ``I saw a man that was eating''\\
     \textbf{N toreb kon moratt [nor kon rbam]}\\
-    me.ERG man.ABS.\textbf{kon} see.IND.ANT he.ERG.\textbf{kon} eat.IND.PR
+    me.\ERG\ man.\ABS.\textbf{kon} see.\IND.\ANT\ he.\ERG.\textbf{kon} eat.\IND.\SIM
 \end{center}
 
 In this example the \textbf{kon} adjective marks that the man mentioned in the main clause is the same as the ``he'' that enters as agent in the expelled subclause.
@@ -1624,12 +1643,12 @@ Declarative subclauses are built by means of a \textbf{declarative pronoun}, sta
 Here are a couple of example of declarative subclauses in ergative and absolutive positions.
 
 \textbf{[nor fa ttla] bogm karygma} \ipa{nor"fat:la bOg\s{m} kar1"gma}\\
-{[she beautiful (is)].ERG fact.ABS (is)}\\
+{[she beautiful (is)].\ERG\ fact.\ABS\ (is)}\\
 \emph{It's a fact that she is beautiful}
 
 
 \textbf{N bag [nor fa ttla] akbat} \ipa{\s{n} bag nor"fat:la ak"bat}\\
-me.ERG ABS.[she beautiful (is)] know.IND.PRES\\
+me.\ERG\ \ABS.[she beautiful (is)] know.\IND.\SIM\\
 \emph{I know she is beautiful}
 
 
@@ -1741,20 +1760,49 @@ There is a distinction between \textbf{alienable} and \textbf{inalienable} posse
 
 \textbf{Shlemet tatyr kakoryb} \ipa{"SlEmet "tat\s{r} ka"kOr1jb}
 
-Shlem.GEN dagger.ERG (very).expensive (omitted copula) - \emph{Shlem's dagger is very expensive}
+Shlem.\GEN\ dagger.\ERG\ (very).expensive (omitted copula) - \emph{Shlem's dagger is very expensive}
 
 While an inalienable relationship uses the opposite order:
 
 \textbf{forb Shlemet ttlyttla} \ipa{fOrb "SlEmet @t:l1jt:la}
 
-Brother.ERG Shlem.GEN (very).beautiful (omitted copula) - \emph{Shlem's brother is very beautiful}
+Brother.\ERG\ Shlem.\GEN\ (very).beautiful (omitted copula) - \emph{Shlem's brother is very beautiful}
 
 There is an exception in genitive expressing geographical or cultural origin, such as the origin village in Flavan names. If Shlem comes from the Karek village, she is \textbf{Karek-t Shlem}, even if the possession is inalienable.
 
 
 
-\section{Kinship and Relationship}
+\section{Gloss reference}
 
+The following abbreviations are used in glossing Flavan:
+
+
+
+\begin{tabular}[]{c l}
+    \ABL & ablative\\
+    \ABS & absolutive\\
+    \ANT & anterior\\
+    \APART & agent participle\\
+    \DAT & dative\\
+    \DEO & deontic\\
+    \DU & dual\\
+    \ERG & ergative\\
+    \IND & indicative\\
+    \INT & interrogative (not intensifier)\\
+    \INV & inversion\\
+    \IPART & indirect participle\\
+    \NOT & negation\\
+    \PL & plural\\
+    \POST & posterior\\
+    \PPART & patient participle\\
+    \SIM & simultaneous / present\\
+    \STR & strengthening\\
+    \VOC & vocative\\
+    \SJV & subjunctive\\
+    \COND & conditional\\
+    
+     
+\end{tabular}
 
 
 \pagebreak
@@ -1977,5 +2025,16 @@ The following are adult-child combination for the ``common'' adults, the ``males
 
 
 \vfill
+
+\pagebreak
+
+\section{Font test}
+
+{\Large
+    \begin{tabular}[]{*{5}{c|}}
+        \input{../font/testtable.tex}
+    \end{tabular}
+
+}
 
 \end{document}
