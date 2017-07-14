@@ -374,7 +374,7 @@ dhyrg:
     tr: eye
     part: n
 
-goma:
+goma: 
     tr: skin
     part: n
 
@@ -383,7 +383,9 @@ boma:
     part: adj
 
 pyka:
-    tr: small
+    tr: 
+        - small
+        - few (plural countable only)
     part: adj
 
 rgodha:
@@ -434,7 +436,7 @@ fettfok:
     tr: strangely, weirdly, in an unusual way
     part: adv
 
-fyttfyt:
+fattfyt:
     tr: immediately, right away
     part: adv
 
@@ -676,6 +678,8 @@ shlydda:
         - blue, cyan, purple, bluish white or pearly/opalescent white, magenta
     part: adj
 
+
+
 karana:
     tr: green
     part: adj
@@ -881,12 +885,18 @@ bo:
     tr: towards, to
     part: postposition
 
+gym:
+    tr: into
+    part: postposition
+
 gmer:
     tr: during, while (temporal)
     part: postposition
 
 maegadd:
-    tr: destruction, chaos, calamities, unluckiness
+    tr: 
+        - destruction, chaos, calamities, unluckiness
+        - "imbalance, excess or defect relating to \\GEN"
     part: n
 
 blyat:
@@ -966,3 +976,46 @@ syat:
     tr: follow
     part: v intr
     note: "\\ABS follows \\DAT"
+
+
+damatam:
+    tr: confess
+    part: v tr
+
+sao:
+    tr: silence
+    part: n
+
+sasao gym pyrdak:
+    tr: silence
+    part: v tr
+    lit: bring into silence
+    refs:
+        - sao
+        - gym
+        - pyrdak
+
+yrabad:
+    tr: lake
+    part: n
+
+sheshat:
+    tr: whisper
+    part: v intr
+
+bobake:
+    tr: spirit, soul, demon
+    part: n
+
+kyrk:
+    tr: so, therefore, thus
+    part: conjunction
+
+kedagyardat:
+    tr:
+        - say officially, declare
+        - announce
+        - report
+        - diagnose
+    part: v tr
+
