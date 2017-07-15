@@ -13,6 +13,12 @@ font.familyname = "Flavan"
 font.addLookup('liga', 'gsub_ligature', (), (('liga', (('latn', ('dflt')), )), ))
 font.addLookupSubtable('liga', 'liga')
 
+font.addLookup('fina', 'gsub_single', (), (('fina', (('latn', ('dflt')), )), ))
+font.addLookupSubtable('fina', 'fina')
+
+
+
+
 extra = [u" ",u"-",u"h"]
 consonants = [u"m",u"n",u"k",u"t",u"d",u"g",u"r",u"ng",u"s",u"l",u"shl",u"dh",u"dhl",u"p",u"b",u"rd",u"rb",u"f",u"sh",u"tt",u"dd",u"rk",u"ttl",u"dd",u"ttk",u"rg",u"gm",u"pd",u"bl", u"ttf",u"sg", u"ttg",u"rm"]
 vowels = [u"a",u"e",u"y",u"o"]
@@ -102,11 +108,14 @@ for letter,filename in glyphs.iteritems():
     # set glyph side bearings, can be any value or even 0
 #    glyph.left_side_bearing = glyph.right_side_bearing = 0
 
-  #  if letter[-1] == u"a":
-  #      if len(letter)>1:
-  #          print "doing %s"%letter
-  #          glyph.addPosSub("fina",letter[:-1])
-  #          print  letter[:-1]
+    if letter[-1] == u"a":
+         if len(letter)>1:
+             print "doing %s"%letter
+             glyph.addPosSub("fina","sa")#letter[:-1])
+             print  letter[:-1]
+    if letter == u"a":
+        print "HERE"
+        glyph.addPosSub("fina","sa")
 
 
 #font.generate("foobar.pfb", flags=["tfm", "afm"]) # type1 with tfm/afm
