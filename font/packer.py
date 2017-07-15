@@ -14,7 +14,7 @@ font.addLookup('liga', 'gsub_ligature', (), (('liga', (('latn', ('dflt')), )), )
 font.addLookupSubtable('liga', 'liga')
 
 extra = [u" ",u"-",u"h"]
-consonants = [u"m",u"n",u"k",u"t",u"d",u"g",u"r",u"ng",u"s",u"l",u"shl",u"dh",u"dhl",u"p",u"b",u"rd",u"rb",u"f",u"sh",u"tt",u"dd",u"rk",u"ttl",u"dd",u"ttk",u"rg",u"gm",u"pd",u"bl", u"ttf",u"sg", u"ttg"]
+consonants = [u"m",u"n",u"k",u"t",u"d",u"g",u"r",u"ng",u"s",u"l",u"shl",u"dh",u"dhl",u"p",u"b",u"rd",u"rb",u"f",u"sh",u"tt",u"dd",u"rk",u"ttl",u"dd",u"ttk",u"rg",u"gm",u"pd",u"bl", u"ttf",u"sg", u"ttg",u"rm"]
 vowels = [u"a",u"e",u"y",u"o"]
 
 glyph_sizes = {
@@ -121,7 +121,7 @@ tabl = ""
 
 for c in consonants:
     for v in vowels:
-        tabl += r"\flav{"+c+v +r"} &"
+        tabl += r"{ \Large \flav{"+c+v +r"} } &"
 
     tabl += r"\\"
 
