@@ -561,7 +561,17 @@ rog:
         - any writing tool
     part: n
 
+akarg:
+    tr: write
+    part: v tr
 
+akabat:
+    tr: know
+    part: v tr
+
+akarkygat:
+    tr: "be born from mother \\ABL"
+    part: v intr
 
 rkygo:
     tr: newborn

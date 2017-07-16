@@ -547,6 +547,53 @@ Every respectable reference grammar on a language should at least present the la
 
 \pagebreak
 
+
+\section{Gloss reference}
+
+The following abbreviations are used in glossing Flavan:
+
+\newcommand{\ONES}{\grammar{1s}}
+\newcommand{\ONEPINC}{\grammar{1inc}}
+\newcommand{\ONEPEXC}{\grammar{1exc}}
+\newcommand{\TWO}{\grammar{2}}
+\newcommand{\THR}{\grammar{3s}}
+\newcommand{\THP}{\grammar{3p}}
+
+
+\begin{tabular}[]{c l}
+    \ONES & first person singular\\
+    \ONEPINC & first person plural inclusive\\
+    \ONEPEXC & first person plural exclusive\\
+    \TWO & second person\\
+    \THR & third person singular\\
+    \THP & third person plural\\
+    \ABL & ablative\\
+    \ABS & absolutive\\
+    \ANT & anterior\\
+    \APART & agent participle\\
+    \COND & conditional\\
+    \DAT & dative\\
+    \DEO & deontic\\
+    \DU & dual\\
+    \ERG & ergative\\
+    \IND & indicative\\
+    \INT & interrogative (not intensifier)\\
+    \INV & inversion\\
+    \IPART & indirect participle\\
+    \NOT & negation\\
+    \PL & plural\\
+    \POST & posterior\\
+    \PPART & patient participle\\
+    \SIM & simultaneous / present\\
+    \STR & strengthening\\
+    \VOC & vocative\\
+    \SJV & subjunctive\\
+    
+
+\end{tabular}
+
+\pagebreak
+
 \section{Phonology and phonotactics}
 
 The phonetic inventory of Flavan is most conveniently presented by means of their own organization in terms of an ``alphabet'', which is a list of allowable consonant clusters and single vowels. Curiosly, they arbitrarily separate consonantal sounds into ``common'' and ``uncommon'', crudely reflecting the frequency of those phonemes in spoken language. The following chart lists the Flavan names for the phonemes, their average Demorog and Bymarog pronunciations, their romanization, and also introduces the corresponding glyphs in the Flavan abugida, which will be better explained later.
@@ -844,7 +891,7 @@ The following is a short text in standard and phonetic romanization. The former 
 
 In the end, the romanization scheme is completely arbitrary and carries no information at all about the language and culture of Flavans. Our conventional choice for this grammar will be the standard romanization.
 
-\section{Stress and intonation}
+\section{Stress}
 
 Absolute vowel lengths are not distinguished phonemically in Flavan; however there is a notion of the longest and loudest (\textbf{stressed}) syllable in a word as compared with all the others (\textbf{unstressed}). Stress, or accent, in each word is applied according to precise rules, thus it cannot help distinguishing single words lexically; however it helps in communicating word boundaries, which can often help disambuguating. Stress is (very optionally) marked with a grave accent: \`a \`e \`o \`y in romanization (an accented l is not necessary since it is impossible for \apa{\s{l}} to be stressed). The rules for stressing a word with at least two syllables are as follows, to be applied in order:
 
@@ -858,7 +905,7 @@ Absolute vowel lengths are not distinguished phonemically in Flavan; however the
 An example: \textbf{kottla} \flav{\hspace{-5pt}kottlaa} (the cardinal numeral 4096) starts as \textbf{kòttla} according to rule 1. Rule 2 changes to \textbf{kottlà}, but rule 3 changes back to \textbf{kòttla} because of the geminated t. Rule 4 does not apply, as there is no final cluster. Thus \textbf{kòttla} is the final stress, and pronunciation is \ipa{"kOt:la}.
 
 
-\cmmnt{intonation}
+%\cmmnt{intonation}
 
 \pagebreak
 
@@ -986,8 +1033,11 @@ Nouns are declensed according to number and case.
 
 \subsection{Number and countability}
 
-Three main numbers are always present: \textbf{singular}, \textbf{dual} and \textbf{plural}. These take on different meanings for the two classes of countable and uncountable nouns. \cmmnt{countability}
+Three main numbers are always present: \textbf{singular}, \textbf{dual} and \textbf{plural}. These take on different meanings for the two classes of countable and uncountable nouns.
 
+\textbf{For countable nouns}, the numbers are essentially self-explanatory. \textbf{singular} can refer to one instance, \textbf{dual} to two \emph{or zero} (i.e. \emph{no men}, \emph{zero men}), and \textbf{plural} to either three or more, or an amount which is unknown to some extent but certainly positive (i.e. man.\PL\ could be also one or two men or any larger number, but not zero).
+
+\textbf{For uncountable nouns}, the \textbf{singular} number means either the general substance or concept (\emph{water is wet}) or an amount which is unimportant (\emph{he's drinking some water}), or (especially if combined with determiners or possessives) a certain single quantity (or variety/type) of the substance/concept considered as a unit (\emph{a glass of water}). The \textbf{dual} number is either \emph{two} of those units (\emph{the water of two glasses}) or a small amount of the substance (\emph{a bit of water}). The \textbf{plural} is only used to mark a plural number of units.
 
 \subsection{Ergative}
 
@@ -1337,6 +1387,13 @@ plur & motty & matty & mottyt & omotty & mamaty\\
 \end{tabular}
 \end{center}
 
+In addition, a set of \textbf{mat}+postposition combinations trigger mergers:
+
+\begin{tabular}[]{c c c | c l}
+    mamaty & + & foter & mayter & \emph{why?, out of where?}\\
+    matt & + & dar & mattar & \emph{up to where?, until when?}\\
+\end{tabular}
+
 \textbf{mat} is to be placed in the right case and position in the interrogative phrase, and this by itself is sufficient to mark it as a question. However, most speakers also add the interrogative mood to the verb (normally only used for yes/no questions) \emph{if} the verb would have normally taken the indicative - this will be clarified better in section \ref{interrogatives}.
 
 The interrogative pronoun, which is always necessarily the focus, can be subject to focus expulsion as explained in section \ref{focus}.
@@ -1352,14 +1409,14 @@ Some pronoun specifier particles followed by some postposition can get merged in
     & ky & fa & sy & da & foba & fen & yk & badd & my   & ek & tta \\\hline\hline
 esh & kysh &  &    &    &      &     &    &      & mysh &    &     \\\hline
 gym &    &    &    &    &      &     &ygym&      &      &    &     \\\hline
-dar \\\hline
-koba\\\hline
+dar & kar & far &  &  & fopdar &  & yktar & baddar &  & ektar &  \\\hline
+koba & & & & & & & & & & &\\\hline
 bo\\\hline
 gmer\\\hline
-rdan\\\hline
+rdan & kyrdyn\\\hline
 atta\\\hline
 dhana\\\hline
-ena\\
+ena \\\hline
 foter\\\hline
 \end{tabular}
 \end{center}
@@ -1488,12 +1545,12 @@ In addition, \textbf{my} as the pronoun also merges with postposition in the sam
 Some verbs, those starting on \textbf{ak-} (except \textbf{ak} itself) construct one of their participles irregularly. To be exact, the irregular participle itself is the original form, and the verb is derived from it. The remaining two participles are constructed regularly from the verb.
 
 {\small
-\begin{tabular}[]{*{5}{c}}
-    Part. & Translation & Voice & Verb & Translation\\
+    \begin{tabular}[]{ c p{1.5cm} c c p{1.5cm} }
+    Part. & Translation & Pos. & Verb & Translation\\
     \hline
-    rog & writer, writing tool & ag & akrog & write\\
-    bot & known                 & pat & akbat & know\\
-    rkygo & newborn & pat & akarkygat & be born\\
+    \textbf{rog} & writer, writing tool & ag & \textbf{akarg} & write\\
+    \textbf{bot} & known                 & pat & \textbf{akabat} & know\\
+    \textbf{rkygo} & newborn & pat & \textbf{akarkygat} & be born\\
    
 \end{tabular}
 }
@@ -1565,6 +1622,25 @@ Modifiers can be composed together, even repeating the same modifier: \emph{to r
 
 
 
+
+\section{Time and the relative tense system}\label{Time}
+
+A discourse or conversation is always set in a certain absolute \textbf{background time}. This time is inherited from sentence to sentence by default and does not need to be constantly marked. The initial absolute time is generally either clear from context (i.e. if we're at the gym and I tell you ``I go to bed'' it's clear I'm talking about the past), or it is marked explicitly by a \textbf{time adverb}. Subsequent shifts in background time are marked again by a new time adverb.
+
+Main clause verbs are in \textbf{relative time} with respect to background time. This means that almost always when telling a simple, linear chain of events a Flavan speaker will use the \SIM\ tense, and just modulate the background time to the relevant point in the past at the beginning. The \ANT\ and \POST\ tenses are generally only used for more complex non-linear constructions, or to carry an aspectual nuance (i.e. present bg + \POST\ does imply a connotation of imminence, destiny, or intention when compared to future bg + \SIM).
+
+Time adverbs are either single adverbs or adverbial locutions; a few of them are particularly generic:
+
+\begin{itemize}
+    \item \textbf{rda} \emph{past}\\
+    \item \textbf{do} \emph{now}\\
+    \item \textbf{anysh} \emph{far future}
+\end{itemize}
+
+
+A common construction in spoken language for telling a story in the past is to actually construct the first sentence in the \ANT\ tense, then set back the bg time to the past with \textbf{rda} in the second and start using \SIM.
+
+
 \section{Relative Clauses}\label{relative}
 
 Flavan doesn't use relative pronouns to form relative clauses in the traditional sense, for relative clauses in the in the position of subject, object, intransitive subject \emph{and} indirect object. Instead, it employs directly its extensive participle system.
@@ -1580,20 +1656,20 @@ Examples for each position (with the subclause in square brackets for clarity):
     ``I saw a man that was eating (transitive)''\\
     \textbf{Ngon toreb [rorbam] moratt}
     \ipa{N\~On "tOreb ro"rbam mo"rat:}\\
-    me.ERG man.ABS (eat.\IND.\SIM).\APART see.\IND.\ANT\\
+    me.\ERG\ man\ABS\ (eat.\IND.\SIM).\APART\ see.\IND.\ANT\\
     \vspace{1em}
     \textbf{ABSOLUTIVE}\\*
     ``I saw a man that was running''\\
     \textbf{Ngon toreb [depapat] moratt}
     \ipa{N\~On "tOreb depa"pat mo"rat:}\\
-    me.ERG man.ABS (eat.IND.\SIM).(PAT PART) see.IND.ANT\\
+    me.\ERG\ man.\ABS\ (eat.\IND.\SIM).(\PPART) see.\IND.\ANT\\
 
     \vspace{1em}
     \textbf{DATIVE}\\*
     ``I saw the man that you gave the book to''\\
     \textbf{Ngon toreb [my kagmenyr dokatt] moratt}
     \ipa{N\~On "tOreb depa"pat mo"rat:}\\
-    me.ERG man.ABS you.ERG book.ABS (give.IND.\SIM).(DAT PART) see.IND.ANT\\
+    me.\ERG\ man.\ABS\ you.\ERG\ book.\ABS\ (give.\IND.\SIM).(\IPART) see.\IND.\ANT\\
 
     (note: \textbf{dokatt} is in the anterior tense since the giving of the book was certainly anterior to the main action.)
 
@@ -1624,7 +1700,7 @@ It can also happen that the above construction is inverted: the main clause has 
 \begin{center}
     ``I saw him, the man that was eating''\\
     \textbf{Ngon nar kon moratt [tyreb kon rbam]}\\
-    me.ERG him.ABS.\textbf{kon} see.IND.ANT man.ERG.\textbf{kon} eat.IND.PR
+    me.\ERG\ him.\ABS.\textbf{kon} see.\IND.\ANT man.\ERG.\textbf{kon} eat.\IND.\SIM
 \end{center}
 
 \section{Declarative clauses}
@@ -1668,7 +1744,7 @@ A negation modifier for verbs has already been introduced,
 
 \pagebreak
 
-\section{Interrogatives}
+\section{Interrogatives}\label{interrogatives}
 
 \section{Numerals}
 
@@ -1773,38 +1849,6 @@ Brother.\ERG\ Shlem.\GEN\ (very).beautiful (omitted copula) - \emph{Shlem's brot
 There is an exception in genitive expressing geographical or cultural origin, such as the origin village in Flavan names. If Shlem comes from the Karek village, she is \textbf{Karek-t Shlem}, even if the possession is inalienable.
 
 
-
-\section{Gloss reference}
-
-The following abbreviations are used in glossing Flavan:
-
-
-
-\begin{tabular}[]{c l}
-    \ABL & ablative\\
-    \ABS & absolutive\\
-    \ANT & anterior\\
-    \APART & agent participle\\
-    \DAT & dative\\
-    \DEO & deontic\\
-    \DU & dual\\
-    \ERG & ergative\\
-    \IND & indicative\\
-    \INT & interrogative (not intensifier)\\
-    \INV & inversion\\
-    \IPART & indirect participle\\
-    \NOT & negation\\
-    \PL & plural\\
-    \POST & posterior\\
-    \PPART & patient participle\\
-    \SIM & simultaneous / present\\
-    \STR & strengthening\\
-    \VOC & vocative\\
-    \SJV & subjunctive\\
-    \COND & conditional\\
-    
-     
-\end{tabular}
 
 
 \pagebreak
