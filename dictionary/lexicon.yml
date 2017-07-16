@@ -838,10 +838,12 @@ ttkat:
 
 n:
     tr: "abbreviation of \\textbf{ngon}"
+    ipa: "\\s{n}"
     part: personal pronoun
 
 m:
     tr: "abbreviation of \\textbf{my}"
+    ipa: "\\s{m}"
     part: personal pronoun
 
 ngon:
@@ -962,6 +964,7 @@ kye:
 rrr:
     tr: uhm, interjection marking esitation
     part: interjection
+    ipa: "\\s{r}:"
     note: unattested in writing
 
 shlattarat:
@@ -1029,3 +1032,6 @@ kedagyardat:
         - diagnose
     part: v tr
 
+
+ryrga:
+    tr: friendly

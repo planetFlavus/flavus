@@ -129,7 +129,13 @@ for phrase in alphabetical:
 
 tex = ""
 
+prevFirstLetter = "0"
+
 for word in alphabetical:
+    if word[0] != prevFirstLetter:
+        prevFirstLetter = word[0]
+        tex += r"\begin{center} \Huge \bfseries %s \end{center}"%prevFirstLetter.upper()
+
     tex += r"\textbf{"+word+r"}"
     try:
         translation = data[word]["tr"]
@@ -144,7 +150,12 @@ for word in alphabetical:
 
     tex += r" \fliv{"+word+r"}"
 
-    tex += r" \apa{"+pronunciate(word)+r"}"
+    if "ipa" in data[word]:
+        pronunciation = data[word]["ipa"]
+    else:
+        pronunciation = pronunciate(word)
+
+    tex += r" \apa{"+pronunciation+r"}"
 
 
     tex += r" "
@@ -175,7 +186,7 @@ for word in alphabetical:
         tex += r", see also \textbf{" + r"}, \textbf{".join(data[word]["phrases"])+r"}"
 
 
-    tex += r"\\"
+    tex += "\n\n"
 
 #    tex += r"\\ \vspace{7pt}"
 
