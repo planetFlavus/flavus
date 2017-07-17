@@ -192,3 +192,12 @@ for word in alphabetical:
 
 outfile = open("texicon.tex",'w')
 outfile.write(tex)
+outfile.close()
+
+# stats
+
+statext = r"Total number of lemmas: \textbf{%s}" % (len(alphabetical))
+
+statfile = open("statistics.tex",'w')
+statfile.write(statext)
+statfile.close()
