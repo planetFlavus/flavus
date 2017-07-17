@@ -678,11 +678,11 @@ febla:
     tr: white, light colours
     part: adj
 
-gmyrta:
+shlydda:
     tr: black, dark colours
     part: adj
 
-shlydda:
+gmyrta:
     tr:
         - necrotic, or relating to death
         - blue, cyan, purple, bluish white or pearly/opalescent white, magenta
